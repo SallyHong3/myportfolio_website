@@ -8,18 +8,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About Yijing</title>
   <link href="img/favicon.ico" rel="short icon">
+
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <header>
-    <div>
+    <div id="logo">
         <a href="index.html">
         <img src="img/logo@1x.png" alt="Yijing Hong logo">
       </a>
-      <nav>
+      <nav id="_navlinks" class="navlinks">
         <ul><!-- for unordered list items-->
           <li><a href="index.html">Work</a></li><!-- list item 1 -->
-          <li><a href="about.html">About</a></li><!-- list item 2 -->
+          <li><a href="about.html" class="active_tab">About</a></li><!-- list item 2 -->
           <li><a href="#contact">Contact</a></li><!-- list item 3 -->
         </ul>
       </nav>
@@ -27,7 +33,7 @@
   </header>
 
   <main>
-    <div><!--open orange section 1 -->
+    <div class="container"><!--open orange section 1 -->
       <div><!--open yellow contain 1 -->
         <h1>About</h1>
       </div><!-- close yellow container 1-->
@@ -48,7 +54,7 @@
         <p>I'm a UX Designer based in New York, with a background in arts and nonprofit administration, where I specialized in audience development, exhibition planning, public programming, and project management.</p>
         <p>I have worked closely with clients at large art museums, institutions, grassroots non-profit groups, city agencies, and small businesses had equipped me with important skills that set the foundation for my career change into user experience design. Understanding the challenges facing service providers, and knowing users' needs, allows me to provide creative solutions to all constituents.</p>
         <p>UX design is what I have been doing in the arts but with a focus on technology. I want to join a team that shares the same passion I have for people and work together to create better products that positively impact people’s everyday lives.</p>
-        <a href="files/website_resume_2021.pdf" download>View my resume</a>
+        <a class="button" href="files/website_resume_2021.pdf" download>View my resume</a>
       </div><!-- close column 1-->
 
       <div><!-- open column -->
@@ -99,7 +105,7 @@
       <p>Thanks for stopping by, let's create excellent work together!</p>
       <div><!-- for email button or link -->
         <p>For collaboration,
-        <a href="mailto:xyz@mail.com">send me an email</a>
+        <a href="mailto:xyz@mail.com" class="button contact">send me an email</a>
         or call me at
         <a href="tel:+1234567890">+1234567890</a><!-- I probably will not include my phone number when I launch the website -->
         </p>

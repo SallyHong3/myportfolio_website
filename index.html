@@ -8,29 +8,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yijing Sally Hong | UX/UI Designer</title>
     <link href="img/favicon.ico" rel="short icon">
+    <!-- add normalize below -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <!-- add style.css file below that's in the css directory -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
   </head>
 
-  <body>
+  <body id="homepage">
     <!-- for header-->
     <header>
-      <div>
+      <div id="logo">
           <a href="index.html">
-          <img src="img/logo@1x.png" alt="Yijing Hong logo">
+          <img id="logo" src="img/logo@1x.png" alt="Yijing Hong logo">
         </a>
-
-        <nav>
-          <ul><!-- for unordered list items-->
-            <li><a href="index.html">Work</a></li><!-- list item 1 -->
-            <li><a href="about.html">About</a></li><!-- list item 2 -->
-            <li><a href="#contact">Contact</a></li><!-- list item 3 -->
+        <nav id="_navlinks" class="navlinks">
+            <li><a href="index.html" title="Yijing's work">Work</a></li>
+            <li><a href="about.html" title="About Yijing">About</a></li>
+            <li><a href="#contact" title="Contact Yijing">Contact</a></li>
           </ul>
         </nav>
       </div>
     </header>
 
     <main>
-      <div><!-- for hero section -->
-        <div>
+      <div>
+        <!-- for hero section -->
+        <div id="heading-intro">
           <h1>Hi, my name is Yijing!<br><span>I’m a UX/UI designer with an eye for beauty in business and a mindset for social good.</span></h1>
           <p>Built in California with a strong visual sense and boundless spirit for adventure.
           <br>Developed in New York City with a passion for serving people.
@@ -61,7 +66,7 @@
               </p>
               <p><b>Featured skills:</b> user research, user flows, information architecture, wireframing, prototyping, user testing, design style guide <!--skills-->
               </p>
-              <a href="olive.html"><b>Read More</b></a><!-- button or link label -->
+              <a href="olive.html" class="button">Read More</a><!-- button or link label -->
           </div><!-- end second column (for text)-->
         </div><!-- end row that holds (2) columns for porject 1-->
 
@@ -82,7 +87,7 @@
             </p>
             <p><b>Featured skills:</b> competitor analysis, branding strategy, user flows, information architecture, wireframing, prototyping, user testing, design style guide <!--skills-->
             </p>
-            <a href="#">Read More</a><!-- button or link label -->
+            <a href="#" class="button">Read More</a><!-- button or link label -->
           </div><!-- end second column (for text)-->
         </div><!-- end row that holds (2) columns for porject-->
       </div><!-- end yellow container -->
@@ -95,7 +100,7 @@
         <p>Thanks for stopping by, let's create excellecnt work together!</p>
         <div><!-- for email button or link -->
           <p>For collaboration,
-          <a href="mailto:xyz@mail.com">send me an email</a>
+          <a href="mailto:xyz@mail.com" class="button contact">send me an email</a>
           or call me at
           <a href="tel:+1234567890">+1234567890</a><!-- I probably will not include my phone number when I launch the website -->
           </p>
