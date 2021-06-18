@@ -24,7 +24,7 @@
   header {
     background-color: #ffffff;
     font-family: 'Poppins', sans-serif;
-    font-size:20px; /* sets the font-size to 16px /Q: Should I set the font-size to 18px for better web accessibility */
+    font-size:20px; /* sets the font-size to 20px /Q: Should I set the font-size to 18px for better web accessibility */
     font-weight:500;  /* sets the font-weight to 400 */
     line-height:1.6;  /* sets the line-height to 1.6 * the font-size */
     color: #444347;
@@ -33,7 +33,6 @@
 
   footer {
     background-color: #f4eee6;
-
     font-family: 'Poppins', sans-serif;
     font-size:16px; /* sets the font-size to 16px /Q: Should I set the font-size to 18px for better web accessibility */
     font-weight:500;  /* sets the font-weight to 400 */
@@ -85,6 +84,15 @@
   a:active {
     color: #c95e33;
     text-decoration: underline;
+  }
+
+  .logo {
+    color: #444347;
+    font-size: 1.15em;
+    letter-spacing:0em;
+    line-height: 0;
+    margin: 20px 0 20px 0;
+    padding: 2px;
   }
 
   /* Note: Always put this rule at the END of stylesheet to avoid overwritten*/
