@@ -1,50 +1,39 @@
 /* colors
   Langoustine:#c95e33
   Stargazing (dark gray ):#444347
+  Griffin (light gray):#8e8e90
   White Beach: #f4eee6;
   Campfire: #bd643e;
   Warm Brone: #8d4b27
 */
 
 /* typography
-  Poppins ()
+  Poppins (title-text)
   Roboto (body-text)
 */
 
+  body {
+    background-color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size:16px; /* sets the font size to 16px */
+    font-weight:400; /* sets the font weight to 400 */
+    line-height:1.6; /* sets the line-height to 1.6 * the font-size */
+    color: black;
+  }
 
   header {
-    text-align: unset;
     background-color: #ffffff;
     font-family: 'Poppins', sans-serif;
     font-size:20px; /* sets the font-size to 16px /Q: Should I set the font-size to 18px for better web accessibility */
     font-weight:500;  /* sets the font-weight to 400 */
     line-height:1.6;  /* sets the line-height to 1.6 * the font-size */
     color: #444347;
-    padding: 10px;
     width: 100%;
-  }
-
-  body {
-    background-color: #ffffff;
-    font-family: 'Roboto', sans-serif;
-    font-size:16px;
-     /* sets the font size to 16px */
-    font-weight:400;
-    /* sets the font weight to 400 */
-    line-height:1.6;
-    /* sets the line-height to 1.6 * the font-size */
-    color: black;
-  }
-
-  main {
-    padding-top: 50px;
-    padding-right: 0;
-    padding-left: 0;
-    padding-bottom: 0;
   }
 
   footer {
     background-color: #f4eee6;
+
     font-family: 'Poppins', sans-serif;
     font-size:16px; /* sets the font-size to 16px /Q: Should I set the font-size to 18px for better web accessibility */
     font-weight:500;  /* sets the font-weight to 400 */
@@ -80,6 +69,11 @@
     line-height:1.6;
   }
 
+  img {
+    width: 100%;
+  }
+
+  /* Q: How to make a line remain underneath the text when the link is selected? */
   a {
     color: #444347;
     text-decoration: none; /* No underlining */
@@ -91,7 +85,6 @@
   a:active {
     color: #c95e33;
     text-decoration: underline;
-    /* Q: How to make a line remain underneath the text when the link is selected? */
   }
 
   /* Note: Always put this rule at the END of stylesheet to avoid overwritten*/
