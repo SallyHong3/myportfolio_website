@@ -17,27 +17,27 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
   </head>
 
-  <body id="olive">
+  <body>
     <!-- for header-->
     <header>
-      <div id="logo">
-          <a href="index.html">
-          <img src="img/logo@1x.png" alt="Yijing Hong logo">
+      <div class="container">
+        <a href="index.html" class="logo">
+          YIJING | <strong>SALLY</strong>
         </a>
-
-        <nav id="_navlinks" class="navlinks">
-          <ul><!-- for unordered list items-->
-            <li><a href="index.html">Work</a></li><!-- list item 1 -->
-            <li><a href="about.html">About</a></li><!-- list item 2 -->
-            <li><a href="#contact">Contact</a></li><!-- list item 3 -->
+        <nav id="navlinks">
+          <ul class="navigation">
+            <li><a href="index.html" title="Yijing's work">Work</a></li>
+            <li><a href="about.html" title="About Yijing">About</a></li>
+            <li><a href="contact.html" title="Contact Yijing">Contact</a></li>
+            <li><a href="files/website_resume_2021.pdf" title="Yijing Hong Resume">Resume</a></li>
           </ul>
         </nav>
       </div>
     </header>
 
-    <main class="project1">
-      <div><!-- open olive project -->
-        <div><!-- open hero section-->
+    <main>
+      <div class="container"><!-- open olive project -->
+        <div class="section"><!-- open hero section-->
           <h2>Olive: UX Design Case Study</h2>
           <a href="olive.html"><!-- use <a>tag to wrap <picture> tag-->
           <picture><!-- insert hero image-->
@@ -48,32 +48,29 @@
          </a>
         </div><!--close hero section-->
 
-       <div><!--open project overview section-->
+       <div class="section"><!--open project overview section-->
          <h2>Project Overview</h2>
           <div><!-- open left column-->
-            <p><b>The Challenge:</b></p>
+            <h3>The Challenge:</h3>
             <p>Since the beginning of the COVID-19 pandemic, there was an increase in physical and mental health issues among the public, with even harsher effects experienced by immigrants and foreign-born individuals in the U.S. However, through the market research, I found that there were no apps fully dedicated to addressing the needs of this particular user group.</p>
-            <p><b>The Goal:</b></p>
+            <h3>The Goal:</h3>
             <p>So I chose to tackle this problem that has not received enough attention:<b> design a wellness app that focuses on the needs of foreign-born individuals living in the U.S.</b>, helping users to get personalized recommendations on wellness management while undertaking challenges of living in a foreign country during the pandemic.</p>
-            <p><b>The Result:</b></p>
+            <h3>The Result:</h3>
             <p>Through <b>27</b> user surveys, <b>3</b> user interviews, <b>2</b> user testings, and <b>10+</b> iterations (and ongoing), I completed the conceptual design of <b>Olive</b>, an AI-driven wellness app that provides personalized recommendations to help users stay on top of their health and wellness. Users can discover new activities, track their progress, and invite friends to join the wellness journey all in one place! The prototype has a <b>4.5 of 5</b> user satisfaction score based on SEQ survey results.</p>
           </div><!--close left column-->
           <div><!-- open right column -->
-            <ul>
-              <li><b>Client:</b> CareerFoundry</li>
-              <li><b>My Role:</b> UX Researcher, UX Designer, UI Designer</li>
-              <li><b>Timeline:</b> November 2020 - April 2021</li>
-              <li><b>Tools:</b> AdobeXD, Balsamiq, Photoshop, UsabilityHub, Optimal Workshop, Google Form, Zoom</li> <!-- *consider embbeding icons of tools -->
-            </ul>
+              <p><b>Client:</b> CareerFoundry</p>
+              <p><b>My Role:</b> UX Researcher, UX Designer, UI Designer</p>
+              <p><b>Timeline:</b> November 2020 - April 2021</p>
+              <p><b>Tools:</b> AdobeXD, Balsamiq, Photoshop, UsabilityHub, Optimal Workshop, Google Form, Zoom</p> <!-- *consider embbeding icons of tools -->
           </div><!-- close right column-->
           <div>
-            <p>Click here to see <b><a href="https://xd.adobe.com/view/9dea1143-3fab-48c7-8b59-016880418048-c8b9/screen/6920edd0-f1c4-4a22-8324-99f26f5682d2">high-fidelity prototype</a></b></p>
-            <p>Click here to see the <b><a href="https://screencast-o-matic.com/watch/crhhfPVe8EO">video presentation</a></b></p>
-            <!-- Q: Is there any way to embed a video walkthrough OR a carousel of hi-fi wireframes here?-->
+            <p><b>Click to see</b><a href="https://xd.adobe.com/view/9dea1143-3fab-48c7-8b59-016880418048-c8b9/screen/6920edd0-f1c4-4a22-8324-99f26f5682d2" class="external-link"> high-fidelity prototype</a>
+            <p><b>Click to see</b><a href="https://screencast-o-matic.com/watch/crhhfPVe8EO" class="external-link"> video presentation</a>
           </div>
          </div><!-- close overview section-->
 
-       <div><!--open design process section-->
+       <div class="section"><!--open design process section-->
          <h2>Design Process</h2>
            <a href="olive.html"><!-- insert design thinking image -->
              <picture>
@@ -85,21 +82,22 @@
          <p>The <b>Design thinking</b> process sets the foundation for the Olive app design. This iterative, user-centered approach enables me to redefine problems from users perspectives and find alternative solutions to address users needs.</p>
        </div><!--close design process section-->
 
-       <div><!-- open empathize section-->
+       <div class="section"><!-- Empathize section-->
          <h2>EMPATHIZE</h2>
-         <div><!--open problem statement sub-section-->
+         <div class="sub-section"><!-- problem statement -->
            <h3>Problem Statement</h3>
            <p>A well-defined problem statement is critical to understand the user goals and set business objectives of a UX Design project.</p>
            <p><i>“The Olive app users need a way to get personalized recommendations on wellness management while undertaking challenges of living in a foreign country during the pandemic because they want to learn how to keep a healthy lifestyle and prevent mental exhaustion.”</i></p>
-         </div><!--close problem statement sub-section-->
-         <div><!--open competitor analysis sub-section-->
+         </div>
+         <!--competitor analysis -->
+         <div class="sub-section">
            <h3>Competitor Analysis</h3>
            <p>To make more informed decisions, competitive analysis on two similar apps, Sanvello and Lifesum, was conducted to assess the current market space.</p>
            <a href="olive.html"><!-- insert design thinking image -->
              <picture>
                <source srcset="img/olive/olive_competitor_analysis@2x.jpg" media="(min-width:650px)">
                <source srcset="img/olive/olive_competitor_analysis@1x.jpg" media="(min-width:465px)">
-               <img src="img/olive/olive_competitor_analysis@2x.jpg" alt="Competitor Analysis Image" style="width:100%;">
+               <img src="img/olive/olive_competitor_analysis@2.jpg" alt="Competitor Analysis Image" style="width:100%;">
              </picture>
            </a>
            <p><b>Key Insights:</b></p>
@@ -110,7 +108,7 @@
                <li>None of the existing apps in the U.S. market provide video and audio content in languages other than English.</li>
              </ul>
          </div><!-- close competitor analysis sub-section-->
-         <div><!--open user research sub-section-->
+         <div class="sub-section"><!--open user research sub-section-->
           <h3>User Research</h3>
           <p>To understand user behaviors and uncover user pain points with existing health and wellness apps, I conducted <b>27 user surveys</b> to collect <b>quantitative data</b> and <b>3 remote user interviews</b> for <b>qualitative data</b>. Also, <b>affinity map</b> was applied to compile and analyze data, grouping related information into clusters.</p>
            <div><!--open left column-->
@@ -142,10 +140,10 @@
          </div><!--close user research sub-section-->
         </div><!-- close empathize section-->
 
-         <div><!-- open define section-->
+         <div class="section"><!-- open define section-->
            <h2>DEFINE</h2>
-           <div><!--open user persona - user journey - user flows sub-section-->
-             <h3>User Personas - User Journeys - User Flows</h3>
+           <div class="sub-section"><!--open user persona - user journey - user flows sub-section-->
+             <h3>User Personas - Journeys - User Flows</h3>
              <p>Based on information gathered from user research, two User Personas were created to represent different target user groups for the app. This helps me to make informed design decisions based on real data from real users and reminds me to keep a user-centric mindset at every stage of design.</p>
              <div><!--open left column-->
                <a href="olive.html"><!-- insert user persona 1 -->
@@ -206,9 +204,9 @@
            </div><!--ser persona - journey maps - user flows sub-sections-->
         </div><!-- close define section-->
 
-       <div><!-- open ideate section-->
+       <div class="section"><!-- open ideate section-->
          <h2>IDEATE</h2>
-         <div><!--open sitemap sub-section-->
+         <div class="sub-section"><!--open sitemap sub-section-->
            <h3>Sitemap</h3>
            <p>To design the information architecture for the app, an initial sitemap was created based on user flows and main functions of the app. Building out the sitemap requires a lot of reiteration, which is one of the most important steps in UX Design for it builds the foundation of the app.</p>
            <a href="olive.html"><!-- insert sitemap-->
@@ -229,9 +227,9 @@
           </div><!-- close sitemap sub-section-->
          </div><!-- close ideate section-->
 
-         <div><!-- open prototype section-->
+         <div class="section"><!-- open prototype section-->
            <h2>PROTOTYPE</h2>
-            <div><!--open wireframe sub-section-->
+            <div class="sub-section"><!--open wireframe sub-section-->
              <h3>From Low-Fidelity Wireframes to High-Fidelity Prototype</h3>
               <p>First, I sketched out <b>low-fidelity wireframes</b> on paper focusing on the navigation hierarchy and main functions that are critical to my target users. This is the best and most efficient way to flesh out ideas and sort out all the important points from the initial user research and sitemap.</p>
               <a href="olive.html"><!-- insert sitemap-->
@@ -267,12 +265,12 @@
            </div><!--close wireframe sub-section-->
          </div><!-- close prototype section-->
 
-         <div><!-- open test section -->
+         <div class="section"><!-- open test section -->
            <h2>TEST</h2>
-            <div><!--open usability testing sub-section-->
+            <div class="sub-section"><!--open usability testing sub-section-->
             <h3>Usability Testing & Preference Test</h3>
-            <p>With the high-fidelity prototype, Olive was ready to be put through the usability testing. A <b>Usability Test Plan</b> was created to streamline the process and <b>6 remote moderated task-based tests</b> were conducted via zoom, using screen sharing and recording</p>
-            <a href="files/olive_usability_test_plan.pdf" download>Click here to see the full test plan.</a>
+            <p>With the high-fidelity prototype, Olive was ready to be put through the usability testing. A <b>Usability Test Plan</b> was created to streamline the process and <b>6 remote moderated task-based tests</b> were conducted via zoom, using screen sharing and recording.
+            <a href="files/olive_usability_test_plan.pdf" download class="external-link">Click here to see the full test plan.</a></p>
             <p>Through analyzing test results with <b>Affinity Maps</b> and <b>Rainbow Spreadsheet</b>, five major issues were identified based on the numbers and severity of errors:</p>
             <div><!-- open left column-->
             <a href="olive.html"><!-- insert user testing result 1-->
@@ -321,9 +319,9 @@
            </div><!-- close usability testing sub-section-->
           </div><!-- close test section -->
 
-        <div><!-- open iterate section -->
+        <div class="section"><!-- open iterate section -->
           <h2>ITERATE</h2>
-            <div><!--open polishing the design sub-section-->
+            <div class="sub-section"><!--open polishing the design sub-section-->
               <h3>Polishing the design</h3>
               <p>In this phase of the project, I made final revisions to the prototype based on user testing results, peer reviews from design collaboration, and Gestalt visual design principles. The new iterations have successfully solved the previous errors from the usability test, improving user satisfaction score (1-5) from 3 to 4.5.</p>
               <a href="olive.html"><!-- insert iteration-->
@@ -336,7 +334,7 @@
                 <p>Positive User Quote 1:"..."</p>
                 <p>Positive User Quote 2:"..."</p>
             </div><!-- close polishing the design sub-section -->
-            <div><!-- open design style guide sub-section -->
+            <div class="sub-section"><!-- open design style guide sub-section -->
               <h3>Design Style Guide</h3>
               <p>Before wrapping up the project, I create a Design Style Guide, including color palette, Typography, UI Patterns, and Tone of voice to standardize my design so that it can be easily shared with stakeholders (designers, developers, Product Manager).</p>
               <a href="olive.html"><!-- insert iteration-->
@@ -347,7 +345,7 @@
                 </picture>
               </a>
             </div><!-- close  design style guide sub-section -->
-            <div><!--open final mockup sub-section-->
+            <div class="sub-section"><!--open final mockup sub-section-->
               <h3>Final Mockup</h3>
               <p>Design, test, iterate, and repeat. After several rounds of iterations, the Olive App is in its final state. However, since the app will continue evolving based on user experience and feedback, more iterations will follow.</p>
               <p><b>Want to see the Olive in action?</b></p>
@@ -363,15 +361,13 @@
         <h2>Let's Connect</h2>
         <p>Thanks for stopping by, let's create excellecnt work together!</p>
         <div><!-- for email button or link -->
-          <p>For collaboration,
-          <a href="mailto:xyz@mail.com" class="button contact">send me an email</a>
-          or call me at
-          <a href="tel:+1234567890">+1234567890</a><!-- I probably will not include my phone number when I launch the website -->
-          </p>
+          <div id="email"><!-- for email button or link -->
+            <a href="mailto:xyz@mail.com" class="button contact">EMAIL ME</a>
+            <p>or find me on social</p>
+          </div>
         </div>
-        <div><!-- for social media links-->
-          <!-- Q: What's the difference between SVG image and Font icons? -->
-          <!-- LinkedIn icon-->
+        <div class="social">
+          <!--Social Media Links and Placeholders-->
           <a href="#" target="_blank">
             <svg height="100%" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" viewBox="0 0 512 512" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink">
               <g id="g5891">
@@ -429,7 +425,7 @@
             </svg>
           </a>
         </div>
-        <p>Copyright Yijing Sally Hong 2021</p>
+        <p id="copyright">Copyright Yijing Sally Hong 2021</p>
       </div>
     </footer>
   </body>

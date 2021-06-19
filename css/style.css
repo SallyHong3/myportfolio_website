@@ -1,126 +1,263 @@
-/* colors
-  Langoustine:#c95e33
-  Stargazing (dark gray ):#444347
-  Griffin (light gray):#8e8e90
-  White Beach: #f4eee6;
-  Campfire: #bd643e;
-  Warm Brone: #8d4b27
+
+/* Colors
+    Langoustine:#c95e33
+    Stargazing (dark gray):#444347
+    Griffin (light gray):#8e8e90
+    White Beach: #f4eee6;
+    Campfire: #bd643e;
+    Warm Brone: #8d4b27
 */
 
-/* typography
-  Poppins (title-text)
-  Roboto (body-text)
+/* TYPOGRAPHY
+  Headings
+  Paragraph
+  Links
+  Unordered Lists / Ordered lists
+
 */
 
+/* GLOBAL
+  Tables
+  Links
+  Buttons
+  Header
+  Footer
+*/
+
+/* ANIMATIONS
+*/
+
+/* COMPONENT LEVEL
+  (Things go here that would go on all the pages but be related to a specific part of the page, meaning like if you had something you repeated on every page – put that here.)
+*/
+
+/* PAGE SPECIFIC
+   Page specific styles. (Styles used only on particular pages)
+*/
+
+/* MEDIA QUERIES
+*/
+
+  /* general styling */
+  * {
+  box-sizing: border-box;
+  }
+
+  /* typography */
   body {
-    background-color: #ffffff;
     font-family: 'Roboto', sans-serif;
-    font-size:16px; /* sets the font size to 16px */
-    font-weight:400; /* sets the font weight to 400 */
+    font-size:18px;
+    font-weight:300;
     line-height:1.6; /* sets the line-height to 1.6 * the font-size */
-    color: black;
-  }
-
-  header {
-    background-color: #ffffff;
-    font-family: 'Poppins', sans-serif;
-    font-size:20px; /* sets the font-size to 20px /Q: Should I set the font-size to 18px for better web accessibility */
-    font-weight:500;  /* sets the font-weight to 400 */
-    line-height:1.6;  /* sets the line-height to 1.6 * the font-size */
-    color: #444347;
-    width: 100%;
-  }
-
-  footer {
-    background-color: #f4eee6;
-    font-family: 'Poppins', sans-serif;
-    font-size:16px; /* sets the font-size to 16px /Q: Should I set the font-size to 18px for better web accessibility */
-    font-weight:500;  /* sets the font-weight to 400 */
-    line-height:1.6;  /* sets the line-height to 1.6 * the font-size */
-    color: #444347;
   }
 
   h1, h2, h3, h4 {
     line-height: 1.4;
+    font-family: 'Poppins', sans-serif;
+    display: inline-block;
   }
   h1 {
-    font-size: 2.5em; /* h1: 40px */
-    font-weight:500;
-    font-family: 'Poppins', sans-serif;
+    font-size: 2.25em;
+    font-weight:700;
     color: #444347;
   }
   h2 {
-    font-size: 1.75em; /* h2: 28px */
+    text-align: center;
+    font-size: 1.75em;
     font-weight:700;
     color: #c95e33;
-    font-family: 'Poppins', sans-serif;
   }
   h3 {
-    font-size: 1.25em; /* h3: 20px */
+    font-size: 1.25em;
     font-weight:500;
-    font-family: 'Roboto', sans-serif;
     color: #444347;
   }
+
+  header {
+    background-color: #f4eee6;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-family: 'Poppins', sans-serif;
+    font-size:20px;
+    font-weight:500;
+    line-height:1.6;
+    color: #444347;
+    width: 100%;
+  }
+
+  .sally {
+    color: #c95e33;
+   }
+
+   #hero {
+     background-color: #ffffff;
+   }
+
+   #hero h1 {
+     margin: 0;
+     padding: 0.67em 0;
+     text-align: center;
+   }
+
+   #short-intro {
+     font-size:0.6em;
+     font-weight:400;
+   }
+
+  main {
+    padding-top: 140px;
+  }
+
+  footer {
+    background-color: #f4eee6;
+    padding:10px;
+    margin: auto;
+    font-family: 'Poppins', sans-serif;
+    font-size:16px;
+    font-weight:500;
+    line-height:1.6;
+    color: #444347;
+  }
+
+  #contact-page {
+    background-color: #ffffff;
+  }
+  #contact {
+    text-align: center;
+    font-size: 20px;
+  }
+
+  #copyright {
+    font-size: 14px;
+    text-align: center;
+  }
+
   p {
-    font-size: 18px; /* p: 18px */
+    font-size: 20px; /* p: 18px */
     font-weight:300;
     font-family: 'Roboto', sans-serif;
-    line-height:1.6;
+    line-height:1.4;
   }
 
   img {
     width: 100%;
   }
 
-  /* Q: How to make a line remain underneath the text when the link is selected? */
   a {
     color: #444347;
-    text-decoration: none; /* No underlining */
+    text-decoration: none;
   }
-  a:hover,
-  a:focus {
-    color: #c95e33;
-  }
-  a:active {
+  a:hover, a:focus {
     color: #c95e33;
     text-decoration: underline;
   }
 
   .logo {
-    color: #444347;
-    font-size: 1.15em;
-    letter-spacing:0em;
-    line-height: 0;
-    margin: 20px 0 20px 0;
-    padding: 2px;
+    max-width: 250px;
   }
 
-  /* Note: Always put this rule at the END of stylesheet to avoid overwritten*/
-  .button {
-    display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-    background-color: #bd643e; /* WCAG color contrast: 3.6 */
+  a:hover.logo {
+    color: #c95e33;
+    text-decoration: none;
+  }
+
+  /* Layout stylying*/
+  nav {
+    display: inline-block;
+    width: 100%;
+  }
+
+  nav > ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  nav > ul > li {
+    display: inline-block;
+  }
+
+  nav > ul > li > a {
+    padding: 0 15px;
+    font-weight: 500;
+    color: #444347;
+  }
+
+  .current-page {
+    color: #c95e33;
+  }
+
+  div {
+    display: block;
+  }
+
+  .container {
+    padding: 0 20px;
+    max-width: 1200px;
+  }
+
+  .section {
+    margin: 20px 0;
+  }
+
+  .sub-section {
+    margin: 20px 0;
+  }
+
+  .row {
+    margin: 20px 0;
+  }
+
+  .external-link {
+    color:#c95e33;
+    font-weight: 500;
+    text-decoration: none;
+  }
+
+  a:hover.external-link {
+    color:#c95e33;
+    font-weight: 500;
+    text-decoration: underline;
+  }
+
+  .social {
+    text-align: center;
+    padding: 0 15px;
+  }
+
+  .social a {
+    display: inline-block;
+    margin: 0 5px;
+  }
+
+  .social svg {
+    width: 50px;
+    height: auto;
+  }
+
+  /* Note: Always put this rule at the END of stylesheet to avoid overwritten */
+  .button{
+    display: inline-block;
+    background-color: #c95e33;
     color: #ffffff; /* needed to override the default link color */
     font-weight: 500;
     padding: 10px;
     border-radius: 5px;
     transition: 0.2s opacity;
   }
+
   .button:hover {
-    opacity: 0.8; /* reduce the opacity of the button to 80% */
-    background-color: #f4eee6;
-    color: #444347;
-    font-weight: 500;
-    text-decoration: underline;
-  }
-  .button:active {
-    display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-    background-color: transparent; /* WCAG color contrast: 3.99 */
+    display: inline-block;
+    background-color: transparent;
     color: #c95e33; /* needed to override the default link color */
+    border: 2px solid #c95e33;
     font-weight: 500;
-    padding: 10px;
     border-radius: 5px;
     transition: 0.2s opacity;
   }
+
   .button.contact {
     background-color: transparent;
     color: #bd643e;
