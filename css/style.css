@@ -1,19 +1,9 @@
 
-/* Colors
-    Langoustine:#c95e33
-    Stargazing (dark gray):#444347
-    Griffin (light gray):#8e8e90
-    White Beach: #f4eee6;
-    Campfire: #bd643e;
-    Warm Brone: #8d4b27
-*/
-
 /* TYPOGRAPHY
   Headings
   Paragraph
   Links
   Unordered Lists / Ordered lists
-
 */
 
 /* GLOBAL
@@ -24,8 +14,7 @@
   Footer
 */
 
-/* ANIMATIONS
-*/
+/* ANIMATIONS */
 
 /* COMPONENT LEVEL
   (Things go here that would go on all the pages but be related to a specific part of the page, meaning like if you had something you repeated on every page – put that here.)
@@ -35,139 +24,59 @@
    Page specific styles. (Styles used only on particular pages)
 */
 
-/* MEDIA QUERIES
-*/
+ /* Colors
+    Langoustine (dark orange): #c95e33
+    Stargazing (dark gray):#444347
+    Griffin (light gray):#8e8e90
+    White Beach: #f4eee6
+    Campfire: #bd643e
+ */
 
-  /* general styling */
+  /* General Styling */
   * {
   box-sizing: border-box;
   }
 
-  /* typography */
-  body {
-    font-family: 'Roboto', sans-serif;
-    font-size:18px;
-    font-weight:300;
-    line-height:1.6; /* sets the line-height to 1.6 * the font-size */
-  }
-
-  h1, h2, h3, h4 {
-    line-height: 1.4;
-    font-family: 'Poppins', sans-serif;
-    display: inline-block;
-  }
-  h1 {
-    font-size: 2.25em;
-    font-weight:700;
-    color: #444347;
-  }
-  h2 {
-    text-align: center;
-    font-size: 1.75em;
-    font-weight:700;
-    color: #c95e33;
-  }
-  h3 {
-    font-size: 1.25em;
-    font-weight:500;
-    color: #444347;
-  }
-
-  header {
-    background-color: #f4eee6;
-    text-align: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    padding: 10px 0;
-    font-family: 'Poppins', sans-serif;
-    font-size:20px;
-    font-weight:500;
-    line-height:1.6;
-    color: #444347;
-    width: 100%;
-  }
-
-  .sally {
-    color: #c95e33;
-   }
-
-   #hero {
-     background-color: #ffffff;
-   }
-
-   #hero h1 {
-     margin: 0;
-     padding: 0.67em 0;
-     text-align: center;
-   }
-
-   #short-intro {
-     font-size:0.6em;
-     font-weight:400;
-   }
-
-  main {
-    padding-top: 140px;
-  }
-
-  footer {
-    background-color: #f4eee6;
-    padding:10px;
-    margin: auto;
-    font-family: 'Poppins', sans-serif;
-    font-size:16px;
-    font-weight:500;
-    line-height:1.6;
-    color: #444347;
-  }
-
-  #contact-page {
-    background-color: #ffffff;
-  }
-  #contact {
-    text-align: center;
-    font-size: 20px;
-  }
-
-  #copyright {
-    font-size: 14px;
-    text-align: center;
-  }
-
-  p {
-    font-size: 20px; /* p: 18px */
-    font-weight:300;
-    font-family: 'Roboto', sans-serif;
-    line-height:1.4;
+  div {
+    display: block;
   }
 
   img {
     width: 100%;
   }
 
-  a {
-    color: #444347;
-    text-decoration: none;
+  head {
+    display: none;
   }
-  a:hover, a:focus {
-    color: #c95e33;
-    text-decoration: underline;
+
+  body {
+    background-color: #ffffff;
+    display: block;
+    margin: 0;
+  }
+
+  header {
+    background-color: #f4eee6;
+    padding-top: 12px;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    margin: 0 auto;
+    top: 0;
+    left: 0;
+    position: fixed;
+    display: inline-block;
+    width: 100%;
+    box-shadow: 0px 1px 5px 0px rgb(50 50 61 / 36%);
   }
 
   .logo {
-    max-width: 250px;
-  }
-
-  a:hover.logo {
-    color: #c95e33;
-    text-decoration: none;
-  }
-
-  /* Layout stylying*/
-  nav {
     display: inline-block;
-    width: 100%;
+    padding-top: 20px;
+  }
+
+  .navlink {
+    position: relative;
   }
 
   nav > ul {
@@ -185,29 +94,82 @@
     color: #444347;
   }
 
-  .current-page {
-    color: #c95e33;
-  }
-
-  div {
-    display: block;
-  }
-
   .container {
-    padding: 0 20px;
+    padding: 0 12px 0 12px;
     max-width: 1200px;
   }
 
-  .section {
-    margin: 20px 0;
-  }
-
-  .sub-section {
-    margin: 20px 0;
-  }
-
   .row {
-    margin: 20px 0;
+    margin: 60px 0 60px 0;
+  }
+
+  .subrow {
+    margin: 20px 0 20px 0;
+  }
+
+  p {
+    display: block;
+    margin-block-start:1em;
+    margin-block-end:1em;
+    margin-block-start:1em;
+    margin-block-end:1em;
+  }
+
+  /* Typography */
+  body {
+    font-family: 'Poppins', sans-serif;
+    font-size:18px;
+    font-weight:300;
+    line-height:1.6;
+    color: black;
+  }
+
+  h1, h2, h3, h4, {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    display: inline-block;
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 2em;
+    font-weight:700;
+    text-align:center;
+    color: #444347;
+  }
+
+  h2 {
+    font-size: 1.75em;
+    font-weight:700;
+    color: #c95e33;
+  }
+
+  h3 {
+    font-size: 1.25em;
+    font-weight:400;
+    color: #444347;
+  }
+
+  h4 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.15em;
+    font-weight:300;
+    color: black;
+  }
+
+  span {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    font-size: 1.5em;
+    font-weight: 400;
+    color: #444347;
+  }
+
+  p {
+    font-size: 18px; /* p: 18px */
+    font-weight:300;
+    font-family: 'Roboto', sans-serif;
+    line-height:1.6;
   }
 
   .external-link {
@@ -220,6 +182,104 @@
     color:#c95e33;
     font-weight: 500;
     text-decoration: underline;
+  }
+
+  /* GLOBAL */
+  header {
+    font-family: 'Poppins', sans-serif;
+    font-size:18px;
+    font-weight:500;
+    line-height:1.6;
+    color: #444347;
+    width: 100%;
+  }
+
+  main {
+    padding-top: 140px;
+    background-color: #ffffff;
+  }
+
+  #work {
+    background-color: #ffffff;
+  }
+
+  footer {
+    background-color: #f4eee6;
+    text-align: center;
+    padding:20px;
+    margin: auto;
+    font-family: 'Poppins', sans-serif;
+    font-size:16px;
+    font-weight:500;
+    line-height:1.6;
+    color: #444347;
+  }
+
+  a {
+    color: #444347;
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+  a:hover, a:focus {
+    color: #c95e33;
+    text-decoration: underline;
+  }
+
+  .current-page {
+    color: #c95e33;
+  }
+
+  /* COMPONENT LEVEL */
+  #welcome, #contact {
+    padding: 12px 0 12px 0;
+    text-align: center;
+    display:inline-block;
+    width: 100%;
+  }
+
+  .sally {
+    color: #c95e33;
+   }
+
+  .centered {
+    text-align: center;
+  }
+
+   #hero {
+     background-color: #ffffff;
+     text-align: center;
+   }
+
+   #hero h1 {
+     margin: 0;
+     padding: 0.67em 0;
+     text-align: center;
+   }
+
+   #short-intro {
+     font-size:0.8em;
+     font-weight:400;
+     padding: 20px 0;
+   }
+
+  #contact-page {
+    background-color: #ffffff;
+  }
+
+  #contact {
+    text-align: center;
+    font-size: 20px;
+  }
+
+  #copyright {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  a:hover.logo {
+    color: #c95e33;
+    text-decoration: none;
   }
 
   .social {
@@ -241,29 +301,91 @@
   .button{
     display: inline-block;
     background-color: #c95e33;
-    color: #ffffff; /* needed to override the default link color */
+    color: #ffffff;
     font-weight: 500;
-    padding: 10px;
+    padding: 10px 20px 10px 20px;
     border-radius: 5px;
-    transition: 0.2s opacity;
+    transition: 0.2s;
+    transition-property: opacity;
   }
 
   .button:hover {
     display: inline-block;
     background-color: transparent;
-    color: #c95e33; /* needed to override the default link color */
+    color: #c95e33;
     border: 2px solid #c95e33;
     font-weight: 500;
+    padding: 10px 20px 10px 20px;
     border-radius: 5px;
-    transition: 0.2s opacity;
+    transition: 0.2s;
+    transition-property: opacity;
   }
 
   .button.contact {
     background-color: transparent;
     color: #bd643e;
     border: 2px solid #bd643e;
+    padding: 10px 20px 10px 20px;
   }
+
   .button.contact:hover {
     background-color: #bd643e;
     color: #ffffff;
+    padding: 10px 20px 10px 20px;
   }
+
+  /* MEDIA QUERIES*/
+  /* -- Medium devices (640px and larger) -- */
+    @media only screen and (min-width: 640px) {
+      header {
+        text-align:unset;
+        padding: 20px 0 13px;
+      }
+
+      nav {
+        display: block;
+        width: auto;
+        float: right;
+      }
+
+      .navlink li:not(:last-child) {
+        display: inline-block;
+      }
+
+      #hero span {
+        display: block;
+      }
+
+      .container {
+        padding: 0 20px 0 20px;
+      }
+
+      .col-md-6 {
+        width: 50%;
+      }
+
+      [class*="col-"] {
+        float: left;
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+
+      .row::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+
+    }
+  /* -- Large devices (1024px or larger) -- */
+      @media only screen and (min-width: 1024px) {
+        .container {
+          max-width: 1200px;
+          margin-left: auto;
+          margin-left: auto;
+        }
+    }
+
+  /* -- X-large devices (1440px or larger)-- */
+      @media only screen and (min-width: 1440px) {
+    }
