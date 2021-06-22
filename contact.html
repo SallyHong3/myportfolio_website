@@ -4,16 +4,18 @@
 <head>
   <meta charset="utf-8">
   <meta name="author" content="Yijng Sally Hong">
-  <meta name="description" content="A personal portfolio to showcase my works in UX and UI Design">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact information">
   <title>Contact Yijing Sally Hong</title>
+  <!-- favicon -->
   <link href="img/favicon.ico" rel="short icon">
-  <!-- add normalize below -->
+  <!-- CSS -->
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-  <!-- add style.css file below that's in the css directory -->
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+  <!-- responsive scaling -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- style for contact form -->
   <style>
   * {box-sizing: border-box;}
 
@@ -53,7 +55,7 @@
   </style>
 </head>
 
-<body>
+<body id="contactpage">
   <header>
     <div class="container">
       <div class="navlink" id="my-navlink">
@@ -73,9 +75,10 @@
   <main>
     <div class="container">
       <h2 class="centered">Contact Me</h2>
-      <p class="text-shift">The easiest way to contact me is via email.</p>
-      <p class="text-shift">You can expect a response to any professional inquiry within 48 hours.</p>
-        <div class="centered" id="contactform">
+      <p class="text-shift">The easiest way to contact me is via email <a href="mailto:xyz@mail.com" class="external-link">xyx@gmail.com</a>. You can expect a response to any professional inquiry within 48 hours.</p>
+      <p class="centered"><b>Interested in working tegether? Please drop a line below:</b></p>
+       <div id="contactform">
+         <h3>Send a Message:</h3>
           <form action="action_page.php">
             <label for="fname">First Name</label>
             <input type="text" id="fname" name="firstname" placeholder="Your first name..">
