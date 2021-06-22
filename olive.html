@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="author" content="Yijng Sally Hong">
-    <meta name="description" content="A personal portfolio to showcase my works in UX and UI Design">
+    <meta name="description" content="UX/UI Design Case Study">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recent Work</title>
     <link href="img/favicon.ico" rel="short icon">
@@ -18,28 +18,28 @@
   </head>
 
   <body id="olive">
-    <header>
+    <header id="header">
       <div class="container">
-        <a href="index.html" class="logo">
-          YIJING | <strong>SALLY</strong>
-        </a>
-        <nav id="navlinks">
-          <ul class="navigation">
-            <li><a href="index.html" title="Yijing's work">Work</a></li>
+        <div class="navlink" id="my-navlink">
+        <a href="index.html" class="logo">YIJING | <strong>SALLY</strong></a>
+        <nav>
+          <ul>
+            <li><a class="current" href="index.html" title="Yijing's work">Work</a></li>
             <li><a href="about.html" title="About Yijing">About</a></li>
             <li><a href="contact.html" title="Contact Yijing">Contact</a></li>
             <li><a href="files/website_resume_2021.pdf" title="Yijing Hong Resume">Resume</a></li>
           </ul>
         </nav>
       </div>
-    </header>
+    </div>
+  </header>
 
     <main>
       <div class="container"><!-- open olive project -->
         <div class="row" id="hero"><!-- open hero section-->
-          <h1>Olive: UX Design Case Study</h1>
+          <h1>Olive: UX/UI Design Case Study</h1>
           <a href="olive.html"><!-- use <a>tag to wrap <picture> tag-->
-          <picture><!-- insert hero image-->
+          <picture class="hero-image"><!-- insert hero image-->
            <source srcset="img/olive/olive_hero@2x.png" media="(min-width:650px)">
            <source srcset="img/olive/olive_hero@1x.png" media="(min-width:465px)">
            <img src="img/olive/olive_hero@2x.png" alt="Olive Hero Image" style="width:100%;">
@@ -70,7 +70,7 @@
          </div><!-- close overview section-->
 
        <div class="container"><!--open design process section-->
-         <h2>Design Process</h2>
+         <h2 class="centered">Design Process</h2>
            <a href="olive.html"><!-- insert design thinking image -->
              <picture>
                <source srcset="img/olive/olive_design_thinking@2x.png" media="(min-width:650px)">
