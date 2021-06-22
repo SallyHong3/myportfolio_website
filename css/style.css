@@ -4,6 +4,7 @@
     Griffin (light gray):#8e8e90
     White Beach: #f4eee6
     Campfire: #bd643e
+    Olive: #7d832f
  */
 
  /* =========== Typography =========== */
@@ -295,6 +296,16 @@
   #work {
      background-color: #ffffff;
    }
+
+  #quote1 {
+    text-align:left;
+    color: #7d832f;
+  }
+
+  #quote2 {
+    text-align:right;
+    color: #7d832f;
+  }
 
   #hero {
      background-color: #ffffff;
