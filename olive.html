@@ -17,8 +17,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
   </head>
 
-  <body>
-    <!-- for header-->
+  <body id="olive">
     <header>
       <div class="container">
         <a href="index.html" class="logo">
@@ -37,8 +36,8 @@
 
     <main>
       <div class="container"><!-- open olive project -->
-        <div class="section"><!-- open hero section-->
-          <h2>Olive: UX Design Case Study</h2>
+        <div class="row" id="hero"><!-- open hero section-->
+          <h1>Olive: UX Design Case Study</h1>
           <a href="olive.html"><!-- use <a>tag to wrap <picture> tag-->
           <picture><!-- insert hero image-->
            <source srcset="img/olive/olive_hero@2x.png" media="(min-width:650px)">
@@ -48,9 +47,15 @@
          </a>
         </div><!--close hero section-->
 
-       <div class="section"><!--open project overview section-->
-         <h2>Project Overview</h2>
-          <div><!-- open left column-->
+       <div class="container"><!--open project overview section-->
+         <h2 class="centered">Project Overview</h2>
+         <div class="subrow" id="projectinfo"><!-- open right column -->
+             <p><b>Client:</b> CareerFoundry</p>
+             <p><b>My Role:</b> UX Researcher, UX Designer, UI Designer</p>
+             <p><b>Timeline:</b> November 2020 - April 2021</p>
+             <p><b>Tools:</b> AdobeXD, Balsamiq, Photoshop, UsabilityHub, Optimal Workshop, Google Form, Zoom</p> <!-- *consider embbeding icons of tools -->
+         </div><!-- close right column-->
+          <div class="subrow"><!-- open left column-->
             <h3>The Challenge:</h3>
             <p>Since the beginning of the COVID-19 pandemic, there was an increase in physical and mental health issues among the public, with even harsher effects experienced by immigrants and foreign-born individuals in the U.S. However, through the market research, I found that there were no apps fully dedicated to addressing the needs of this particular user group.</p>
             <h3>The Goal:</h3>
@@ -58,19 +63,13 @@
             <h3>The Result:</h3>
             <p>Through <b>27</b> user surveys, <b>3</b> user interviews, <b>2</b> user testings, and <b>10+</b> iterations (and ongoing), I completed the conceptual design of <b>Olive</b>, an AI-driven wellness app that provides personalized recommendations to help users stay on top of their health and wellness. Users can discover new activities, track their progress, and invite friends to join the wellness journey all in one place! The prototype has a <b>4.5 of 5</b> user satisfaction score based on SEQ survey results.</p>
           </div><!--close left column-->
-          <div><!-- open right column -->
-              <p><b>Client:</b> CareerFoundry</p>
-              <p><b>My Role:</b> UX Researcher, UX Designer, UI Designer</p>
-              <p><b>Timeline:</b> November 2020 - April 2021</p>
-              <p><b>Tools:</b> AdobeXD, Balsamiq, Photoshop, UsabilityHub, Optimal Workshop, Google Form, Zoom</p> <!-- *consider embbeding icons of tools -->
-          </div><!-- close right column-->
-          <div>
+          <div class="subrow">
             <p><b>Click to see</b><a href="https://xd.adobe.com/view/9dea1143-3fab-48c7-8b59-016880418048-c8b9/screen/6920edd0-f1c4-4a22-8324-99f26f5682d2" class="external-link"> high-fidelity prototype</a>
             <p><b>Click to see</b><a href="https://screencast-o-matic.com/watch/crhhfPVe8EO" class="external-link"> video presentation</a>
           </div>
          </div><!-- close overview section-->
 
-       <div class="section"><!--open design process section-->
+       <div class="container"><!--open design process section-->
          <h2>Design Process</h2>
            <a href="olive.html"><!-- insert design thinking image -->
              <picture>
@@ -82,15 +81,15 @@
          <p>The <b>Design thinking</b> process sets the foundation for the Olive app design. This iterative, user-centered approach enables me to redefine problems from users perspectives and find alternative solutions to address users needs.</p>
        </div><!--close design process section-->
 
-       <div class="section"><!-- Empathize section-->
-         <h2>EMPATHIZE</h2>
-         <div class="sub-section"><!-- problem statement -->
+       <div class="container"><!-- Empathize section-->
+         <h2 class="centered">EMPATHIZE</h2>
+         <div class="row"><!-- problem statement -->
            <h3>Problem Statement</h3>
            <p>A well-defined problem statement is critical to understand the user goals and set business objectives of a UX Design project.</p>
            <p><i>“The Olive app users need a way to get personalized recommendations on wellness management while undertaking challenges of living in a foreign country during the pandemic because they want to learn how to keep a healthy lifestyle and prevent mental exhaustion.”</i></p>
          </div>
          <!--competitor analysis -->
-         <div class="sub-section">
+         <div class="row">
            <h3>Competitor Analysis</h3>
            <p>To make more informed decisions, competitive analysis on two similar apps, Sanvello and Lifesum, was conducted to assess the current market space.</p>
            <a href="olive.html"><!-- insert design thinking image -->
@@ -100,18 +99,16 @@
                <img src="img/olive/olive_competitor_analysis@2.jpg" alt="Competitor Analysis Image" style="width:100%;">
              </picture>
            </a>
-           <p><b>Key Insights:</b></p>
-             <ul>
-               <li>The majority of apps only focus on one aspect of wellness, physical fitness or mental health.</li>
-               <li>Many apps ask new users to complete a lengthy wellness assessment when they sign-up.</li>
-               <li>Popular apps require subscription fees for full access and paid features are not cost-friendly.</li>
-               <li>None of the existing apps in the U.S. market provide video and audio content in languages other than English.</li>
-             </ul>
-         </div><!-- close competitor analysis sub-section-->
-         <div class="sub-section"><!--open user research sub-section-->
+               <p><b>Key Insights:</b></p>
+               <p>1. The majority of apps only focus on one aspect of wellness, physical fitness or mental health.</p>
+               <p>2. Many apps ask new users to complete a lengthy wellness assessment when they sign-up.</p>
+               <p>3. Popular apps require subscription fees for full access and paid features are not cost-friendly.</p>
+               <p>4. None of the existing apps in the U.S. market provide video and audio content in languages other than English.</p>
+             </div><!-- close competitor analysis sub-section-->
+         <div class="row"><!--open user research sub-section-->
           <h3>User Research</h3>
           <p>To understand user behaviors and uncover user pain points with existing health and wellness apps, I conducted <b>27 user surveys</b> to collect <b>quantitative data</b> and <b>3 remote user interviews</b> for <b>qualitative data</b>. Also, <b>affinity map</b> was applied to compile and analyze data, grouping related information into clusters.</p>
-           <div><!--open left column-->
+           <div class="column col-md-12 col-lg-6"><!--open left column-->
              <a href="olive.html"><!-- insert user survey screenshot -->
                <picture>
                  <source srcset="img/olive/olive_user_research@2x.jpg" media="(min-width:650px)">
@@ -120,7 +117,7 @@
                </picture>
              </a>
            </div><!-- close left column-->
-           <div><!-- open right column-->
+           <div class="column col-md-12 col-lg-6"><!-- open right column-->
              <a href="olive.html"><!-- insert affinity map -->
                <picture>
                  <source srcset="img/olive/olive_affinity_map@2x.jpg" media="(min-width:650px)">
@@ -129,14 +126,12 @@
                </picture>
              </a>
            </div><!--close right column-->
-           <p><b>Key Insights:</b></p>
-             <ul>
-               <li>Users have irregular work hours since they started working from home so they need to get personalized tips on wellness management for work-life balance.</li>
-               <li>Users experienced loneliness and felt unsupported due to social distancing and being away from their home country.</li>
-               <li>Many gym-goers missed their gym buddies and want to find alternative group workout experiences online.</li>
-               <li>Users are motivated when they can see achievements and progress.</li>
-               <li>Non-native English-speaking users would love to access audio/video resources in their native languages.</li>
-             </ul>
+            <p><b>Key Insights:</b></p>
+            <p>1. Users have irregular work hours since they started working from home so they need to get personalized tips on wellness management for work-life balance.
+            <p>2. Users experienced loneliness and felt unsupported due to social distancing and being away from their home country.
+            <p>3. Many gym-goers missed their gym buddies and want to find alternative group workout experiences online.
+            <p>4. Users are motivated when they can see achievements and progress.
+            <p>5. Non-native English-speaking users would love to access audio/video resources in their native languages.</p>
          </div><!--close user research sub-section-->
         </div><!-- close empathize section-->
 
@@ -145,7 +140,7 @@
            <div class="sub-section"><!--open user persona - user journey - user flows sub-section-->
              <h3>User Personas - Journeys - User Flows</h3>
              <p>Based on information gathered from user research, two User Personas were created to represent different target user groups for the app. This helps me to make informed design decisions based on real data from real users and reminds me to keep a user-centric mindset at every stage of design.</p>
-             <div><!--open left column-->
+             <div class="column col-md-12 col-lg-6"><!--open left column-->
                <a href="olive.html"><!-- insert user persona 1 -->
                  <picture>
                    <source srcset="img/olive/olive_user_persona1@2x.jpg" media="(min-width:650px)">
@@ -154,7 +149,7 @@
                  </picture>
                </a>
              </div><!-- close left column-->
-             <div><!-- open right column-->
+             <div class="column col-md-12 col-lg-6"><!-- open right column-->
                <a href="olive.html"><!-- insert user persona 2 -->
                  <picture>
                    <source srcset="img/olive/olive_user_persona2@2x.jpg" media="(min-width:650px)">
@@ -164,7 +159,7 @@
                </a>
              </div><!--close right column-->
              <p>Then, to have a more in-depth understanding of users' goals and the context of app uses, user journey maps were created to visualize users’ mental models (thoughts, behaviors, feelings) when they try to complete tasks and achieve their goals.</p>
-             <div><!--open left column-->
+             <div class="column col-md-12 col-lg-6"><!--open left column-->
                <a href="olive.html"><!-- insert user journey 1 -->
                  <picture>
                    <source srcset="img/olive/olive_user_journey1@2x.jpg" media="(min-width:650px)">
@@ -173,7 +168,7 @@
                  </picture>
                </a>
              </div><!-- close left column-->
-             <div><!-- open right column-->
+             <div class="column col-md-12 col-lg-6"><!-- open right column-->
                <a href="olive.html"><!-- insert user journey 2 -->
                  <picture>
                    <source srcset="img/olive/olive_user_journey2@2x.jpg" media="(min-width:650px)">
@@ -183,7 +178,7 @@
                </a>
              </div><!--close right column-->
              <p>Finally, two user flows were created to show the actual screens that users will interact with when using the Olive app.</p>
-             <div><!--open left column-->
+             <div class="column col-md-12 col-lg-6"><!--open left column-->
                <a href="olive.html"><!-- insert user flow 1 -->
                  <picture>
                    <source srcset="img/olive/olive_user_flow1@2x.jpg" media="(min-width:650px)">
@@ -192,7 +187,7 @@
                  </picture>
                </a>
              </div><!-- close left column-->
-             <div><!-- open right column-->
+             <div class="column col-md-12 col-lg-6"><!-- open right column-->
                <a href="olive.html"><!-- insert user flow 2 -->
                  <picture>
                    <source srcset="img/olive/olive_user_flow2@2x.jpg" media="(min-width:650px)">
@@ -216,16 +211,18 @@
                <img src="img/olive/olive_sitemap@2x.jpg" alt="Sitemap Image" style="width:100%;">
              </picture>
            </a>
+         </div>
            <p>Then, to test the information hierarchies of the sitemap, an <b>open card sorting</b> with 30 cards was conducted using Optimal Workshop. From the result of the similarity matrix, we see a clear pattern of how the participants have grouped various app features with only a few overlapped categories that need to be further simplified.</p>
-           <a href="olive.html"><!-- insert sitemap-->
+           <a href="olive.html"><!-- insert similarity matrix-->
              <picture>
                <source srcset="img/olive/olive_similarity_matrix@2x.jpg" media="(min-width:650px)">
                <source srcset="img/olive/olive_similarity_matrixp@1x.jpg" media="(min-width:465px)">
                <img src="img/olive/olive_similarity_matrix@2x.jpg" alt="Similarity Matrix Image" style="width:100%;">
              </picture>
            </a>
-          </div><!-- close sitemap sub-section-->
-         </div><!-- close ideate section-->
+         </div>
+        </div><!-- close sitemap sub-section-->
+      </div><!-- close ideate section-->
 
          <div class="section"><!-- open prototype section-->
            <h2>PROTOTYPE</h2>
@@ -265,14 +262,13 @@
            </div><!--close wireframe sub-section-->
          </div><!-- close prototype section-->
 
-         <div class="section"><!-- open test section -->
+         <div class="container"><!-- open test section -->
            <h2>TEST</h2>
-            <div class="sub-section"><!--open usability testing sub-section-->
+            <div class="row"><!--open usability testing sub-section-->
             <h3>Usability Testing & Preference Test</h3>
             <p>With the high-fidelity prototype, Olive was ready to be put through the usability testing. A <b>Usability Test Plan</b> was created to streamline the process and <b>6 remote moderated task-based tests</b> were conducted via zoom, using screen sharing and recording.
             <a href="files/olive_usability_test_plan.pdf" download class="external-link">Click here to see the full test plan.</a></p>
-            <p>Through analyzing test results with <b>Affinity Maps</b> and <b>Rainbow Spreadsheet</b>, five major issues were identified based on the numbers and severity of errors:</p>
-            <div><!-- open left column-->
+            <div class="column col-md-12 col-lg-6"><!-- open left column-->
             <a href="olive.html"><!-- insert user testing result 1-->
               <picture>
                 <source srcset="img/olive/olive_user_testing1@2x.jpg" media="(min-width:650px)">
@@ -281,7 +277,7 @@
               </picture>
             </a>
             </div><!-- close left column-->
-            <div><!-- open right column-->
+            <div class="column col-md-12 col-lg-6"><!-- open right column-->
             <a href="olive.html"><!-- insert user testing result 2-->
               <picture>
                 <source srcset="img/olive/olive_user_testing2@2x.jpg" media="(min-width:650px)">
@@ -289,16 +285,18 @@
                 <img src="img/olive/olive_user_testing2@2x.jpg" alt="user testing Image" style="width:100%;">
                 </picture>
               </a>
-              <ul>
-                <li><b>Unclear Navigation</b> - Lack of indicator on the welcome screen to show users the next step</li>
-                <li><b>UI Misinterpretation</b> - Skip partial onboarding due to “sign up/login” buttons on splash screen</li>
-                <li><b>Accessibility</b> - The font size is too small to read </li>
-                <li><b>Improper Information Hierarchy</b> - Users missed the “Start Check-in” button at first attempt</li>
-                <li><b>Cognitive overload</b> - Too much information on display on the “Me” page</li>
-              </ul>
             </div><!-- close right column-->
-            <p>In addition, two <b>preference tests</b> were conducted to find out which Welcome screen is visually more attractive to users and which Sign-up layout is easier to navigate for Olive users.</p>
-            <div><!-- open left column-->
+            <div class="row">
+              <p>Through analyzing test results with <b>Affinity Maps</b> and <b>Rainbow Spreadsheet</b>, five major issues were identified based on the numbers and severity of errors:</p>
+              <div class="container">
+                <p><b>1. Unclear Navigation</b> - Lack of indicator on the welcome screen to show users the next step
+                <br><b>2. UI Misinterpretation</b> - Skip partial onboarding due to “sign up/login” buttons on splash screen
+                <br><b>3. Accessibility</b> - The font size is too small to read
+                <br><b>4. Improper Information Hierarchy</b> - Users missed the “Start Check-in” button at first attempt
+                <br><b>5.Cognitive overload</b> - Too much information on display on the “Me” page</p>
+              </div>
+             <p>In addition, two <b>preference tests</b> were conducted to find out which Welcome screen is visually more attractive to users and which Sign-up layout is easier to navigate for Olive users.</p>
+            <div class="column col-md-12 col-lg-6"><!-- open left column-->
             <a href="olive.html"><!-- insert preference test result 1-->
               <picture>
                 <source srcset="img/olive/olive_preference_test1@2x.jpg" media="(min-width:650px)">
@@ -307,7 +305,7 @@
               </picture>
             </a>
             </div><!-- close left column-->
-            <div><!-- open right column-->
+            <div class="column col-md-12 col-lg-6"><!-- open right column-->
             <a href="olive.html"><!-- insert preference test result 2-->
               <picture>
                 <source srcset="img/olive/olive_preference_test2@2x.jpg" media="(min-width:650px)">
@@ -319,9 +317,9 @@
            </div><!-- close usability testing sub-section-->
           </div><!-- close test section -->
 
-        <div class="section"><!-- open iterate section -->
+        <div class="container"><!-- open iterate section -->
           <h2>ITERATE</h2>
-            <div class="sub-section"><!--open polishing the design sub-section-->
+            <div class="row"><!--open polishing the design sub-section-->
               <h3>Polishing the design</h3>
               <p>In this phase of the project, I made final revisions to the prototype based on user testing results, peer reviews from design collaboration, and Gestalt visual design principles. The new iterations have successfully solved the previous errors from the usability test, improving user satisfaction score (1-5) from 3 to 4.5.</p>
               <a href="olive.html"><!-- insert iteration-->
@@ -334,7 +332,7 @@
                 <p>Positive User Quote 1:"..."</p>
                 <p>Positive User Quote 2:"..."</p>
             </div><!-- close polishing the design sub-section -->
-            <div class="sub-section"><!-- open design style guide sub-section -->
+            <div class="row"><!-- open design style guide sub-section -->
               <h3>Design Style Guide</h3>
               <p>Before wrapping up the project, I create a Design Style Guide, including color palette, Typography, UI Patterns, and Tone of voice to standardize my design so that it can be easily shared with stakeholders (designers, developers, Product Manager).</p>
               <a href="olive.html"><!-- insert iteration-->
@@ -345,7 +343,7 @@
                 </picture>
               </a>
             </div><!-- close  design style guide sub-section -->
-            <div class="sub-section"><!--open final mockup sub-section-->
+            <div class="row"><!--open final mockup sub-section-->
               <h3>Final Mockup</h3>
               <p>Design, test, iterate, and repeat. After several rounds of iterations, the Olive App is in its final state. However, since the app will continue evolving based on user experience and feedback, more iterations will follow.</p>
               <p><b>Want to see the Olive in action?</b></p>

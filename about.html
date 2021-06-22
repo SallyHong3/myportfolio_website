@@ -16,50 +16,52 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 
-<body id="about">
-  <header>
-    <div>
-      <a href="index.html" class="logo">
-        YIJING | <strong>SALLY</strong>
-      </a>
-        <nav id="navlink">
-          <ul class="navigation">
+<body id="about-page">
+  <header id="header">
+    <div class="container">
+      <div class="navlink" id="my-navlink">
+        <a href="index.html" class="logo">YIJING | <strong>SALLY</strong></a>
+        <nav>
+          <ul>
             <li><a href="index.html" title="Yijing Hong Work">Work</a></li>
             <li><a class="current-page" href="about.html" title="About Yijing">About</a></li>
             <li><a href="contact.html" title="Contact Yijing">Contact</a></li>
             <li><a href="files/website_resume_2021.pdf" title="Yijing Hong Resume">Resume</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+         </ul>
+       </nav>
+     </div>
+   </div>
+ </header>
 
   <main id="about">
     <div class="container"><!--open orange section 1 -->
       <div class="row"><!--open yellow contain 1 -->
         <h2 class="centered">About</h2>
       </div><!-- close yellow container 1-->
-    </div><!-- close orange section 1 -->
-    <div class="container"><!-- open orange section 2 -->
-      <div class="row"><!-- open yellow container 2 -->
+        <div class="column col-md-12 col-lg-5">
         <a href="about.html"><!-- link to headshot -->
         <picture>
           <source srcset="img/headshot2@2x.jpg" media="(min-width:650px)">
           <source srcset="img/headshot2@1x.jpg" media="(min-width:465px)">
-          <img src="img/headshot2@2x.jpg" alt="my headshot" style="width:100%;">
+          <img src="img/headshot2@2x.jpg" alt="my headshot">
         </picture>
         </a>
-     <div class="row"><!-- open green row for two columns-->
-       <div><!-- open column 1 -->
+      </div>
+     <div class="row"><!-- open row for two columns-->
+       <!-- open column 1 -->
+       <div class="column col-md-12 col-lg-7">
         <h3><strong>Hi, I'm Yijing. I also go by Sally!</strong></h3>
         <p>I'm a UX Designer based in New York, with a background in arts and nonprofit administration, where I specialized in audience development, exhibition planning, public programming, and project management.</p>
         <p>I have worked closely with clients at large art museums, institutions, grassroots non-profit groups, city agencies, and small businesses had equipped me with important skills that set the foundation for my career change into user experience design. Understanding the challenges facing service providers, and knowing users' needs, allows me to provide creative solutions to all constituents.</p>
         <p>UX design is what I have been doing in the arts but with a focus on technology. I want to join a team that shares the same passion I have for people and work together to create better products that positively impact people’s everyday lives.</p>
         <a class="button" href="files/website_resume_2021.pdf" download>View my resume</a>
       </div><!-- close column 1-->
-
+     </div>
       <div class="row"><!-- open row 2 -->
+        <div class="column col-md-12 col-lg-12">
         <h2 class="centered">Skills & Tools</h2>
-         <div class="col-md-6"><!-- open left column -->
+        <!-- open left column -->
+          <div class="column col-md-6 col-lg-6">
            <h3>Key Skills</h3>
              <ul>
                <li>Competitive Analysis</li>
@@ -75,7 +77,7 @@
                <li>Project Management</li>
             </ul>
         </div><!-- close left column -->
-        <div class="col-md-6"> <!-- open right column -->
+        <div class="column col-md-6 col-lg-6"> <!-- open right column -->
            <h3>Day-to-day Tools</h3>
             <ul>
                <li>AdobeXD</li>
@@ -90,12 +92,12 @@
                <li>Airtable</li>
                <li>Trello</li>
             </ul>
-        </div><!-- close right column-->
-      </div><!-- close row 2-->
-     </div><!-- close green row-->
-    </div><!--close yellow container 2 -->
-   </div><!-- close organfe section 2 -->
-  </main>
+          </div><!-- close right column-->
+        </div><!-- close row 2-->
+      </div><!-- close a column-->
+    </div><!-- close green row-->
+  </div><!--close container 2 -->
+</main>
 
   <footer id="contact"><!-- for perosnal contact and social media info -->
     <div>
