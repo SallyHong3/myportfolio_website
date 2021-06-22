@@ -6,7 +6,7 @@
     <meta name="author" content="Yijng Sally Hong">
     <meta name="description" content="A personal portfolio to showcase my works in UX and UI Design">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects</title>
+    <title>Ongoing Project</title>
     <link href="img/favicon.ico" rel="short icon">
 
 
@@ -17,8 +17,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
   </head>
 
-  <body>
-    <!-- for header-->
+  <body id="museumexpert">
     <header>
       <div class="container">
         <a href="index.html" class="logo">
@@ -37,10 +36,10 @@
 
     <main>
       <div class="container"><!-- open MuseumExpert project -->
-        <div class="section"><!-- open hero section-->
+        <div class="row" id="hero"><!-- open hero section-->
           <h1>MuseumExpert: Branding & Web Design</h1>
           <a href="museumexpert.html"><!-- use <a>tag to wrap <picture> tag-->
-          <picture><!-- insert hero image placeholder-->
+          <picture><!-- insert hero image -->
            <source srcset="img/museumexpert/museumexpert_hero@2x.png" media="(min-width:650px)">
            <source srcset="img/museumexpert/museumexpert_hero@1x.png" media="(min-width:465px)">
            <img src="img/museumexpert/museumexpret_hero@2x.png" alt="MuseumExpert Hero Image" style="width:100%;">
@@ -48,11 +47,17 @@
          </a>
         </div><!--close hero section-->
 
-       <div class="section"><!--open project overview section-->
-         <h2>Project Overview</h2>
-          <div><!-- open left column-->
-            <h3>About:<h3>
-            <p><a href="https://www.museumexpert.org/"><b>MuseumExpert.org</b></a> strives to help museum professionals who are out of work because of the COVID-19 pandemic. It provides a platform for employers with immediate, long- or short-term staffing needs to connect with experienced museum experts who are open to work.</p>
+       <div class="container"><!--open project overview section-->
+         <h2 class="centered">Project Overview</h2>
+          <div class="subrow" id="projectinfo">
+            <p><b>Client:</b> MuseumExpert.org</a></p>
+            <p><b>My Role:</b> UX Designer, UI Designer</p>
+            <p><b>Timeline:</b> June 2021 - Present</p>
+            <p><b>Tools:</b> Sketch, Figma, Wix.com, HTML5, CSS, Canva, Miro, UsabilityHub, Google Form, Zoom</p>
+           </div>
+           <div class="subrow">
+            <h3>About:</h3>
+              <p><a href="https://www.museumexpert.org/"><b>MuseumExpert.org</b></a> strives to help museum professionals who are out of work because of the COVID-19 pandemic. It provides a platform for employers with immediate, long- or short-term staffing needs to connect with experienced museum experts who are open to work.</p>
             <h3>The Challenge:</h3>
               <p>1. How to make MuseumExpert stand out among its competitors in the field with service that address users needs and a stronger online presence?
               <br>2. How to make the platform more intuitive for new users and make the expert searching process more efficient for employers?</p>
@@ -65,43 +70,30 @@
               <br>2. Improve user flows on sign-up, expert profile editing, and employers search & filter function.
               <br>3. An easily browsed landing page with high-level previews of MuseumExpert services.
               <br>4. Launch the desktop prototype with an increase of new users sign-ups and higher member retention rate.</p>
-            </div><!--close left column-->
-           <div><!-- open right column -->
-              <p><b>Client:</b> MuseumExpert.org</a></p>
-              <p><b>My Role:</b> UX Designer, UI Designer</p>
-              <p><b>Timeline:</b> June 2021 - Present</p>
-              <p><b>Tools:</b> Sketch, Figma, Wix.com, HTML5, CSS, Canva, Miro, UsabilityHub, Google Form, Zoom</p>
-              <!-- *consider embbeding icons of tools -->
-          </div><!-- close right column-->
-          <div>
-            <p><b>Click to see</b><a href="#" class="external-link"> high-fidelity prototype</a>
-            <p><b>Click to see</b><a href="#" class="external-link"> video presentation</a>
+            </div>
           </div>
-         </div><!-- close overview section-->
-
-       <div class="section"><!--open design process section-->
+       <div class="container"><!--open design process section-->
          <h2>Design Process (TBD)</h2>
          <p>Please stay tuned for project updates :)</p>
        </div><!--close design process section-->
-     </div><!-- close project -->
     </main>
 
-    <footer id="contact"><!-- for perosnal contact and social media info -->
-      <div>
-        <h2>Let's Connect</h2>
-        <p>Thanks for stopping by, let's create excellecnt work together!</p>
-        <div><!-- for email button or link -->
-          <div id="email"><!-- for email button or link -->
-            <a href="mailto:xyz@mail.com" class="button contact">EMAIL ME</a>
-            <p>or find me on social</p>
-          </div>
+    <footer id="contact" class="banner"><!-- for perosnal contact and social media info -->
+      <div class="container">
+        <h2>Get in touch</h2>
+        <h4>Thanks for stopping by, let's create excellecnt work together!</h4>
+         <div class="subrow">
+          <a href="mailto:xyz@mail.com" class="button contact">Email Me</a>
         </div>
-        <div class="social">
-          <!--Social Media Links and Placeholders-->
+        <div class="subrow">
+          <h4>or find me on social</h4>
+        <div id="social" class="social">
+          <!-- Social Media Links and Placeholders -->
+          <!-- linkedin icon -->
           <a href="#" target="_blank">
-            <svg height="100%" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" viewBox="0 0 512 512" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <svg height="100%" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" viewBox="0 0 512 512" width="100%" xml:space="preserve">
               <g id="g5891">
-                <path d="M512,64c0,-35.323 -28.677,-64 -64,-64l-384,0c-35.323,0 -64,28.677 -64,64l0,384c0,35.323 28.677,64 64,64l384,0c35.323,0 64,-28.677 64,-64l0,-384Z" id="background" style="fill:#2867b2;"/>
+                <path d="M512,64c0,-35.323 -28.677,-64 -64,-64l-384,0c-35.323,0 -64,28.677 -64,64l0,384c0,35.323 28.677,64 64,64l384,0c35.323,0 64,-28.677 64,-64l0,-384Z" id="background" style="fill:#2867b2;"/> <!--change hex color here for different style-->
               <g id="shapes">
                 <rect height="257.962" id="rect11" style="fill:#fff;" width="85.76" x="61.053" y="178.667"/>
                 <path d="M104.512,54.28c-29.341,0 -48.512,19.29 -48.512,44.573c0,24.752 18.588,44.574 47.377,44.574l0.554,0c29.903,0 48.516,-19.822 48.516,-44.574c-0.555,-25.283 -18.611,-44.573 -47.935,-44.573Z" id="path13-0" style="fill:#fff;fill-rule:nonzero;"/>
@@ -110,9 +102,9 @@
               </g>
             </svg>
           </a>
-          <!-- Instagram icon-->
+          <!-- instagram icon-->
           <a href="#" target="_blank">
-            <svg height="100%" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" viewBox="0 0 512 512" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <svg height="100%" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" viewBox="0 0 512 512" width="100%" xml:space="preserve">
               <g>
                 <path d="M256,0c-69.526,0 -78.244,0.295 -105.549,1.541c-27.248,1.243 -45.858,5.57 -62.142,11.899c-16.834,6.542 -31.111,15.296 -45.342,29.528c-14.232,14.231 -22.986,28.508 -29.528,45.342c-6.329,16.283 -10.656,34.893 -11.899,62.141c-1.246,27.305 -1.54,36.023 -1.54,105.549c0,69.524 0.294,78.242 1.54,105.547c1.243,27.248 5.57,45.858 11.899,62.141c6.542,16.834 15.296,31.111 29.528,45.344c14.231,14.231 28.508,22.985 45.342,29.527c16.284,6.328 34.894,10.656 62.142,11.899c27.305,1.245 36.023,1.54 105.549,1.54c69.524,0 78.242,-0.295 105.547,-1.54c27.248,-1.243 45.858,-5.571 62.141,-11.899c16.834,-6.542 31.111,-15.296 45.344,-29.527c14.231,-14.233 22.985,-28.51 29.527,-45.344c6.328,-16.283 10.656,-34.893 11.899,-62.141c1.245,-27.305 1.54,-36.023 1.54,-105.547c0,-69.526 -0.295,-78.244 -1.54,-105.549c-1.243,-27.248 -5.571,-45.858 -11.899,-62.141c-6.542,-16.834 -15.296,-31.111 -29.527,-45.342c-14.233,-14.232 -28.51,-22.986 -45.344,-29.528c-16.283,-6.329 -34.893,-10.656 -62.141,-11.899c-27.305,-1.246 -36.023,-1.541 -105.547,-1.541Zm0,46.127c68.354,0 76.451,0.26 103.445,1.492c24.959,1.139 38.514,5.309 47.535,8.814c11.949,4.644 20.477,10.192 29.435,19.15c8.959,8.958 14.506,17.487 19.15,29.435c3.506,9.021 7.676,22.576 8.815,47.535c1.231,26.995 1.492,35.092 1.492,103.447c0,68.354 -0.261,76.451 -1.492,103.445c-1.139,24.959 -5.309,38.514 -8.815,47.535c-4.644,11.949 -10.191,20.477 -19.15,29.435c-8.958,8.959 -17.486,14.506 -29.435,19.15c-9.021,3.506 -22.576,7.676 -47.535,8.814c-26.99,1.232 -35.086,1.493 -103.445,1.493c-68.361,0 -76.455,-0.261 -103.447,-1.493c-24.959,-1.138 -38.514,-5.308 -47.535,-8.814c-11.949,-4.644 -20.477,-10.191 -29.436,-19.15c-8.958,-8.958 -14.506,-17.486 -19.149,-29.435c-3.506,-9.021 -7.676,-22.576 -8.815,-47.535c-1.232,-26.994 -1.492,-35.091 -1.492,-103.445c0,-68.355 0.26,-76.452 1.492,-103.447c1.139,-24.959 5.309,-38.514 8.815,-47.535c4.643,-11.948 10.191,-20.477 19.149,-29.435c8.959,-8.958 17.487,-14.506 29.436,-19.15c9.021,-3.505 22.576,-7.675 47.535,-8.814c26.995,-1.232 35.092,-1.492 103.447,-1.492Z" style="fill:url(#_Linear1);fill-rule:nonzero;"/><path d="M256,341.332c-47.129,0 -85.334,-38.205 -85.334,-85.332c0,-47.129 38.205,-85.334 85.334,-85.334c47.127,0 85.332,38.205 85.332,85.334c0,47.127 -38.205,85.332 -85.332,85.332Zm0,-216.792c-72.604,0 -131.46,58.856 -131.46,131.46c0,72.602 58.856,131.458 131.46,131.458c72.602,0 131.458,-58.856 131.458,-131.458c0,-72.604 -58.856,-131.46 -131.458,-131.46Z" style="fill:url(#_Linear2);fill-rule:nonzero;"/>
                 <path d="M423.372,119.346c0,16.967 -13.754,30.72 -30.72,30.72c-16.966,0 -30.72,-13.753 -30.72,-30.72c0,-16.966 13.754,-30.719 30.72,-30.719c16.966,0 30.72,13.753 30.72,30.719Z" style="fill:url(#_Linear3);fill-rule:nonzero;"/>
@@ -139,24 +131,27 @@
               </defs>
               </svg>
           </a>
-          <!-- Twitter icon-->
+          <!-- twitter icon-->
           <a href="#" target="_blank">
-            <svg height="100%" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" viewBox="0 0 512 512" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <svg height="100%" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" viewBox="0 0 512 512" width="100%" xml:space="preserve">
               <g>
                 <path d="M448,512l-384,0c-35.328,0 -64,-28.672 -64,-64l0,-384c0,-35.328 28.672,-64 64,-64l384,0c35.328,0 64,28.672 64,64l0,384c0,35.328 -28.672,64 -64,64Z" id="Dark_Blue" style="fill:#1da1f2;fill-rule:nonzero;"/>
                 <path d="M196.608,386.048c120.704,0 186.752,-100.096 186.752,-186.752c0,-2.816 0,-5.632 -0.128,-8.448c12.8,-9.216 23.936,-20.864 32.768,-34.048c-11.776,5.248 -24.448,8.704 -37.76,10.368c13.568,-8.064 23.936,-20.992 28.928,-36.352c-12.672,7.552 -26.752,12.928 -41.728,15.872c-12.032,-12.8 -29.056,-20.736 -47.872,-20.736c-36.224,0 -65.664,29.44 -65.664,65.664c0,5.12 0.64,10.112 1.664,14.976c-54.528,-2.688 -102.912,-28.928 -135.296,-68.608c-5.632,9.728 -8.832,20.992 -8.832,33.024c0,22.784 11.648,42.88 29.184,54.656c-10.752,-0.384 -20.864,-3.328 -29.696,-8.192l0,0.896c0,31.744 22.656,58.368 52.608,64.384c-5.504,1.536 -11.264,2.304 -17.28,2.304c-4.224,0 -8.32,-0.384 -12.288,-1.152c8.32,26.112 32.64,45.056 61.312,45.568c-22.528,17.664 -50.816,28.16 -81.536,28.16c-5.248,0 -10.496,-0.256 -15.616,-0.896c28.928,18.432 63.488,29.312 100.48,29.312" id="Logo__x2014__FIXED" style="fill:#fff;fill-rule:nonzero;"/>
              </g>
             </svg>
           </a>
-          <!-- Behance icon-->
+          <!-- behance icon-->
           <a href="#" target="_blank">
-            <svg height="100%" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" viewBox="0 0 512 512" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <svg height="100%" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" viewBox="0 0 512 512" width="100%" xml:space="preserve">
               <path d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm6.245,330.656c0.918,-13.824 -0.208,-27.022 -3.408,-39.661c-3.229,-12.658 -8.408,-23.944 -15.66,-33.809c-7.262,-9.885 -16.512,-17.781 -27.778,-23.613c-11.324,-5.908 -24.513,-8.805 -39.585,-8.805c-13.653,0 -25.98,2.424 -37.161,7.243c-11.172,4.847 -20.763,11.475 -28.858,19.873c-8.076,8.35 -14.23,18.31 -18.661,29.852c-4.355,11.503 -6.58,23.944 -6.58,37.265c0,13.775 2.14,26.491 6.391,37.975c4.298,11.541 10.329,21.369 18.093,29.681c7.972,8.285 17.439,14.628 28.772,19.163c11.343,4.469 23.973,6.741 38.004,6.741c20.138,0 37.407,-4.611 51.58,-13.861c14.344,-9.221 24.844,-24.531 31.774,-45.975l-43.097,0c-1.667,5.51 -5.984,10.822 -13.075,15.792c-7.158,4.98 -15.679,7.47 -25.544,7.47c-13.729,0 -24.323,-3.597 -31.66,-10.755c-7.347,-7.158 -12.1,-20.488 -12.1,-34.576l128.553,0Zm-280.454,77.294c11.04,0 21.805,-1.391 32.171,-4.137c10.491,-2.755 19.835,-6.997 27.987,-12.763c8.086,-5.718 14.647,-13.131 19.466,-22.277c4.781,-9.042 7.167,-19.778 7.167,-32.257c0,-15.394 -3.664,-28.517 -11.134,-39.49c-7.432,-10.897 -18.661,-18.557 -33.781,-22.912c11.106,-5.264 19.428,-12.033 25.089,-20.289c5.634,-8.275 8.436,-18.623 8.436,-31.007c0,-11.447 -1.884,-21.132 -5.624,-28.867c-3.844,-7.849 -9.212,-14.079 -16.066,-18.766c-6.969,-4.686 -15.196,-8.104 -24.853,-10.149c-9.705,-2.111 -20.328,-3.124 -32.096,-3.124l-115.999,0l0,246.038l119.237,0Zm-6.173,-109.655c11.655,0 21.132,2.679 28.252,8.076c7.091,5.463 10.67,14.476 10.67,27.153c0,6.467 -1.051,11.826 -3.238,15.954c-2.178,4.146 -5.188,7.422 -8.805,9.808c-3.636,2.481 -7.925,4.166 -12.772,5.217c-4.772,1.07 -9.847,1.543 -15.177,1.543l-57.829,0l0,-67.751l58.899,0Zm226.403,-26.671c-5.823,-6.428 -15.66,-9.913 -27.675,-9.913c-7.82,0 -14.287,1.316 -19.475,3.996c-5.075,2.651 -9.221,5.936 -12.393,9.818c-3.162,3.938 -5.302,8.104 -6.561,12.554c-1.25,4.336 -2.007,8.265 -2.225,11.74l79.605,0c-1.165,-12.478 -5.435,-21.709 -11.276,-28.195Zm-234.612,-67.799c4.801,0.001 9.469,0.341 13.937,1.212c4.535,0.786 8.455,2.225 11.92,4.318c3.484,2.016 6.258,4.885 8.35,8.559c2.017,3.673 3.011,8.407 3.011,14.125c0,10.32 -3.011,17.828 -9.24,22.382c-6.296,4.62 -14.249,6.893 -23.84,6.893l-54.828,0l0,-57.489l50.69,0Zm255.999,-1.126l0,-24.276l-99.733,0l0,24.276l99.733,0Z"/>
             </svg>
-          </a>
-        </div>
+           </a>
+         </div>
+       </div>
+        <div class="subrow">
         <p id="copyright">Copyright Yijing Sally Hong 2021</p>
+       </div>
       </div>
-    </footer>
-  </body>
-  </html>
+     </footer>
+   </body>
+ </html>
