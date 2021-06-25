@@ -20,11 +20,11 @@
   </head>
 
   <body>
-    <header id="header">
+    <header>
       <div class="container pullRightLeft">
         <!-- mobile menu toggle-->
         <div class="navtoggle" id="myNavtoggle">
-        <a id="logo" href="index.html">YIJING | <strong>SALLY</strong></a>
+        <a class="logo" href="index.html">YIJING | <strong>SALLY</strong></a>
         <nav>
           <ul>
             <li class="pullRightLeft"><a href="index.html" class="current-page" title="Yijing's work">Work</a></li>
@@ -92,10 +92,11 @@
          <div class="row">
            <h3>Problem Statement</h3>
            <p>A well-defined problem statement is critical to understand the user goals and set business objectives of a UX Design project.</p>
-           <p><i>“The Olive app users need a way to get personalized recommendations on wellness management while undertaking challenges of living in a foreign country during the pandemic because they want to learn how to keep a healthy lifestyle and prevent mental exhaustion.”</i></p>
+           <h4 id="pov">“The Olive app users need a way to get personalized recommendations on wellness management while undertaking challenges of living in a foreign country during the pandemic because they want to learn how to keep a healthy lifestyle and prevent mental exhaustion.”</h4>
          </div>
        </div>
          <!--competitor analysis -->
+      <div class="container">
          <div class="row">
            <h3>Competitor Analysis</h3>
            <p>To make more informed decisions, competitive analysis on two similar apps, Sanvello and Lifesum, was conducted to assess the current market space.</p>
@@ -112,8 +113,10 @@
                <p>3. Popular apps require subscription fees for full access and paid features are not cost-friendly.</p>
                <p>4. None of the existing apps in the U.S. market provide video and audio content in languages other than English.</p>
           </div><!-- close competitor analysis -->
+        </div>
         <!--user research-->
-         <div class="row">
+       <div class="container">
+        <div class="row">
           <h3>User Research</h3>
           <p>To understand user behaviors and uncover user pain points with existing health and wellness apps, I conducted <b>27 user surveys</b> to collect <b>quantitative data</b> and <b>3 remote user interviews</b> for <b>qualitative data</b>. Also, <b>affinity map</b> was applied to compile and analyze data, grouping related information into clusters.</p>
            <div class="column col-md-12 col-lg-6"><!--open left column-->
@@ -141,6 +144,7 @@
             <p>4. Users are motivated when they can see achievements and progress.
             <p>5. Non-native English-speaking users would love to access audio/video resources in their native languages.</p>
          </div><!-- close user research -->
+       </div>
 
          <div class="container"><!-- open define section-->
            <h2 class="centered">DEFINE</h2>
@@ -152,7 +156,7 @@
                  <picture>
                    <source srcset="img/olive/olive_user_persona1@2x.jpg" media="(min-width:650px)">
                    <source srcset="img/olive/olive_user_persona1@1x.jpg" media="(min-width:465px)">
-                   <img src="img/olive/olive_user_persona@2x.jpg" alt="User Persona 1 Image" style="width:100%;">
+                   <img class="persona" src="img/olive/olive_user_persona@2x.jpg" alt="User Persona 1 Image" style="width:100%;">
                  </picture>
                </a>
              </div><!-- close left column-->
@@ -161,7 +165,7 @@
                  <picture>
                    <source srcset="img/olive/olive_user_persona2@2x.jpg" media="(min-width:650px)">
                    <source srcset="img/olive/olive_user_persona2@1x.jpg" media="(min-width:465px)">
-                   <img src="img/olive/olive_user_persona2@2x.jpg" alt="User Persona 2 Image" style="width:100%;">
+                   <img class="persona" src="img/olive/olive_user_persona2@2x.jpg" alt="User Persona 2 Image" style="width:100%;">
                  </picture>
                </a>
              </div><!--close right column-->
@@ -171,7 +175,7 @@
                  <picture>
                    <source srcset="img/olive/olive_user_journey1@2x.jpg" media="(min-width:650px)">
                    <source srcset="img/olive/olive_user_journey1@1x.jpg" media="(min-width:465px)">
-                   <img src="img/olive/olive_user_journey1@2x.jpg" alt="User Journey 1 Image" style="width:100%;">
+                   <img class="userjourney" src="img/olive/olive_user_journey1@2x.jpg" alt="User Journey 1 Image" style="width:100%;">
                  </picture>
                </a>
              </div><!-- close left column-->
@@ -180,7 +184,7 @@
                  <picture>
                    <source srcset="img/olive/olive_user_journey2@2x.jpg" media="(min-width:650px)">
                    <source srcset="img/olive/olive_user_journey2@1x.jpg" media="(min-width:465px)">
-                   <img src="img/olive/olive_user_journey2@2x.jpg" alt="User Journey 2 Image" style="width:100%;">
+                   <img class="userjourney" src="img/olive/olive_user_journey2@2x.jpg" alt="User Journey 2 Image" style="width:100%;">
                  </picture>
                </a>
              </div><!--close right column-->
@@ -190,7 +194,7 @@
                  <picture>
                    <source srcset="img/olive/olive_user_flow1@2x.jpg" media="(min-width:650px)">
                    <source srcset="img/olive/olive_user_flow1@1x.jpg" media="(min-width:465px)">
-                   <img src="img/olive/olive_user_flow1@2x.jpg" alt="User Flow 1 Image" style="width:100%;">
+                   <img class="userflow" src="img/olive/olive_user_flow1@2x.jpg" alt="User Flow 1 Image" style="width:100%;">
                  </picture>
                </a>
              </div><!-- close left column-->
@@ -199,7 +203,7 @@
                  <picture>
                    <source srcset="img/olive/olive_user_flow2@2x.jpg" media="(min-width:650px)">
                    <source srcset="img/olive/olive_user_flow2@1x.jpg" media="(min-width:465px)">
-                   <img src="img/olive/olive_user_flow2@2x.jpg" alt="User Flow 2 Image" style="width:100%;">
+                   <img class="userflow" src="img/olive/olive_user_flow2@2x.jpg" alt="User Flow 2 Image" style="width:100%;">
                  </picture>
                </a>
              </div><!--close right column-->
@@ -216,7 +220,7 @@
              <picture>
                <source srcset="img/olive/olive_sitemap@2x.jpg" media="(min-width:650px)">
                <source srcset="img/olive/olive_sitemap@1x.jpg" media="(min-width:465px)">
-               <img src="img/olive/olive_sitemap@2x.jpg" alt="Sitemap Image" style="width:100%;">
+               <img class="sitemap" src="img/olive/olive_sitemap@2x.jpg" alt="Sitemap Image" style="width:100%;">
              </picture>
            </a>
            <p>Then, to test the information hierarchies of the sitemap, an <b>open card sorting</b> with 30 cards was conducted using Optimal Workshop. From the result of the similarity matrix, we see a clear pattern of how the participants have grouped various app features with only a few overlapped categories that need to be further simplified.</p>
@@ -224,7 +228,7 @@
              <picture>
                <source srcset="img/olive/olive_similarity_matrix@2x.jpg" media="(min-width:650px)">
                <source srcset="img/olive/olive_similarity_matrixp@1x.jpg" media="(min-width:465px)">
-               <img src="img/olive/olive_similarity_matrix@2x.jpg" alt="Similarity Matrix Image" style="width:100%;">
+               <img class="sitemap"src="img/olive/olive_similarity_matrix@2x.jpg" alt="Similarity Matrix Image" style="width:100%;">
              </picture>
            </a>
         </div><!-- close sitemap sub-section-->
@@ -279,7 +283,7 @@
               <picture>
                 <source srcset="img/olive/olive_user_testing1@2x.jpg" media="(min-width:650px)">
                 <source srcset="img/olive/olive_user_testing1@1x.jpg" media="(min-width:465px)">
-                <img src="img/olive/olive_user_testing1@2x.jpg" alt="user testing Image" style="width:100%;">
+                <img class="usertesting" src="img/olive/olive_user_testing1@2x.jpg" alt="user testing Image" style="width:100%;">
               </picture>
             </a>
             </div><!-- close left column-->
@@ -288,14 +292,14 @@
               <picture>
                 <source srcset="img/olive/olive_user_testing2@2x.jpg" media="(min-width:650px)">
                 <source srcset="img/olive/olive_user_testing2@1x.jpg" media="(min-width:465px)">
-                <img src="img/olive/olive_user_testing2@2x.jpg" alt="user testing Image" style="width:100%;">
+                <img class="usertesting" src="img/olive/olive_user_testing2@2x.jpg" alt="user testing Image" style="width:100%;">
                 </picture>
               </a>
             </div><!-- close right column-->
             <div class="row">
               <p>Through analyzing test results with <b>Affinity Maps</b> and <b>Rainbow Spreadsheet</b>, five major issues were identified based on the numbers and severity of errors:</p>
               <div class="container">
-                <p><b>1. Unclear Navigation</b> - Lack of indicator on the welcome screen to show users the next step
+                <p id="test-result"><b>1. Unclear Navigation</b> - Lack of indicator on the welcome screen to show users the next step
                 <br><b>2. UI Misinterpretation</b> - Skip partial onboarding due to “sign up/login” buttons on splash screen
                 <br><b>3. Accessibility</b> - The font size is too small to read
                 <br><b>4. Improper Information Hierarchy</b> - Users missed the “Start Check-in” button at first attempt
@@ -307,7 +311,7 @@
               <picture>
                 <source srcset="img/olive/olive_preference_test1@2x.jpg" media="(min-width:650px)">
                 <source srcset="img/olive/olive_preference_test1@1x.jpg" media="(min-width:465px)">
-                <img src="img/olive/olive_preference_test1@2x.jpg" alt="preference test Image" style="width:100%;">
+                <img class="usertesting" src="img/olive/olive_preference_test1@2x.jpg" alt="preference test Image" style="width:100%;">
               </picture>
             </a>
             </div><!-- close left column-->
@@ -316,7 +320,7 @@
               <picture>
                 <source srcset="img/olive/olive_preference_test2@2x.jpg" media="(min-width:650px)">
                 <source srcset="img/olive/olive_preference_test2@1x.jpg" media="(min-width:465px)">
-                <img src="img/olive/olive_preference_test2@2x.jpg" alt="preference test Image" style="width:100%;">
+                <img class="usertesting" src="img/olive/olive_preference_test2@2x.jpg" alt="preference test Image" style="width:100%;">
                 </picture>
               </a>
             </div><!-- close right column-->
@@ -355,7 +359,7 @@
               </a>
             </div><!-- close  design style guide sub-section -->
 
-            <div class="row"><!--open final mockup sub-section-->
+            <div class="row" id="final-mockup"><!--open final mockup sub-section-->
               <h3>Final Mockup</h3>
               <p>Design, test, iterate, and repeat. After several rounds of iterations, the Olive App is in its final state. However, since the app will continue evolving based on user experience and feedback, more iterations will follow.</p>
               <p><b>Want to see the Olive in action?</b></p>
