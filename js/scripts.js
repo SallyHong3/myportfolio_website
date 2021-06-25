@@ -1,2 +1,10 @@
 console.log ("你好！Welcome to my portfolio site.");
-alert("你好! Welcome to my UX design portfolio.");
+
+function menuToggle() {
+  var x = document.getElementById('myNavtoggle');
+  if (x.className === 'navtoggle') {
+    x.className += ' responsive';
+  } else {
+    x.className = 'navtoggle';
+  }
+}
