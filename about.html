@@ -15,42 +15,45 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
   <!-- responsive scaling-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CND links -->
+  <script src="https://kit.fontawesome.com/0e927bc352.js" crossorigin="anonymous"></script>
 </head>
 
-<body id="about-page">
+<body id="about">
   <header id="header">
-    <div class="container">
-      <div class="navlink" id="my-navlink">
-        <a href="index.html" class="logo">YIJING | <strong>SALLY</strong></a>
+    <div class="container pullRightLeft">
+    <!-- mobile menu toggle-->
+    <div class="navtoggle" id="myNavtoggle">
+      <a class="logo" href="index.html">YIJING | <strong>SALLY</strong></a>
         <nav>
           <ul>
-            <li><a href="index.html" title="Yijing Hong Work">Work</a></li>
-            <li><a class="current-page" href="about.html" title="About Yijing">About</a></li>
-            <li><a href="contact.html" title="Contact Yijing">Contact</a></li>
-            <li><a href="files/website_resume_2021.pdf" title="Yijing Hong Resume">Resume</a></li>
+            <li class="pullRightLeft"><a href="index.html" title="Yijing Hong Work">Work</a></li>
+            <li class="pullRightLeft"><a href="about.html" class="current-page" title="About Yijing">About</a></li>
+            <li class="pullRightLeft"><a href="contact.html" title="Contact Yijing">Contact</a></li>
+            <li class="pullRightLeft"><a href="files/website_resume_2021.pdf" title="Yijing Hong Resume">Resume</a></li>
+            <li class="pullRightLeft"><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
          </ul>
        </nav>
      </div>
    </div>
  </header>
 
-  <main id="about">
+  <main id="aboutme">
     <div class="container"><!--open section container -->
       <!-- open row 1-->
       <div class="row">
         <h2 class="centered">About</h2>
         <!-- open column for headshot -->
-          <div class="column col-md-12 col-lg-5">
+          <div class="column col-md-6 col-lg-4">
             <a href="about.html">
             <picture>
-              <source srcset="img/headshot/headshot2@2x.jpg" media="(min-width:650px)">
-              <source srcset="img/headshot/headshot2@1x.jpg" media="(min-width:465px)">
-            <img src="img/headshot/headshot2@2x.jpg" alt="my headshot">
+              <source srcset="img/headshot/headshot2@1x.jpg" media="(min-width:767px)">
+              <img id="about-image" src="img/headshot/headshot2@2x.jpg" height="800" width="800" alt="my headshot">
            </picture>
          </a>
        </div><!-- close column for headshot -->
        <!-- open column for intro -->
-       <div class="column col-md-12 col-lg-7">
+       <div class="column col-md-12 col-lg-8">
           <h3><strong>Hi, I'm Yijing. I also go by Sally!</strong></h3>
           <p>I'm a UX Designer based in New York, with a background in arts and nonprofit administration, where I specialized in audience development, exhibition planning, public programming, and project management.</p>
           <p>I have worked closely with clients at large art museums, institutions, grassroots non-profit groups, city agencies, and small businesses had equipped me with important skills that set the foundation for my career change into user experience design. Understanding the challenges facing service providers, and knowing users' needs, allows me to provide creative solutions to all constituents.</p>
@@ -176,6 +179,7 @@
    </footer>
 
    <!-- JS -->
+   <script src="js/jquery-3.6.0.min.js"></script>
    <script src="js/scripts.js"></script>
 
  </body>

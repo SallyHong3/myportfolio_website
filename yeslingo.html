@@ -15,19 +15,23 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
     <!-- responsive scaling -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CND links -->
+    <script src="https://kit.fontawesome.com/0e927bc352.js" crossorigin="anonymous"></script>
   </head>
 
   <body id="yeslingo">
     <header id="header">
-      <div class="container">
-        <div class="navlink" id="my-navlink">
-        <a href="index.html" class="logo">YIJING | <strong>SALLY</strong></a>
-        <nav id="navlinks">
-          <ul class="navigation">
-            <li><a class="current" href="index.html" title="Yijing's work">Work</a></li>
-            <li><a href="about.html" title="About Yijing">About</a></li>
-            <li><a href="contact.html" title="Contact Yijing">Contact</a></li>
-            <li><a href="files/website_resume_2021.pdf" title="Yijing Hong Resume">Resume</a></li>
+      <div class="container pullRightLeft">
+        <!-- mobile menu toggle-->
+        <div class="navtoggle" id="myNavtoggle">
+        <a class="logo" href="index.html">YIJING | <strong>SALLY</strong></a>
+        <nav>
+          <ul>
+            <li class="pullRightLeft"><a class="current-page" href="index.html" title="Yijing's work">Work</a></li>
+            <li class="pullRightLeft"><a href="about.html" title="About Yijing">About</a></li>
+            <li class="pullRightLeft"><a href="contact.html" title="Contact Yijing">Contact</a></li>
+            <li class="pullRightLeft"><a href="files/website_resume_2021.pdf" title="Yijing Hong Resume">Resume</a></li>
+            <li class="pullRightLeft"><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
           </ul>
         </nav>
       </div>
@@ -46,24 +50,26 @@
           </picture>
          </a>
         </div><!--close hero section-->
+      </div>
 
        <div class="container"><!--open project overview section-->
          <h2 class="centered">Project Overview</h2>
           <div class="subrow" id="projectinfo">
-            <p><b>Client:</b> CareerFoundry</a></p>
+            <p><b>Client:</b> CareerFoundry</p>
             <p><b>My Role:</b> UX Designer, UI Designer</p>
             <p><b>Timeline:</b> July 2021</p>
             <p><b>Tools:</b> Sketch, AdobeXD, Figma, Canva, Miro, UsabilityHub, Zoom</p>
-           </div>
-           <div class="subrow">
+          </div>
+          <div class="subrow">
             <h3>The Challenge:</h3>
               <p>TEXT HERE</p>
             <h3>The Solutions:</h3>
               <p>TEXT HERE</p>
             <h3>The Result:</h3>
               <p>TEXT HERE</p>
-            </div>
           </div>
+        </div>
+
        <div class="container"><!--open design process section-->
          <h2 class="centered">Design Process (TBD)</h2>
          <h3>Please stay tuned for project updates :)</h3>
@@ -147,7 +153,8 @@
      </footer>
 
      <!-- JS -->
+     <script src="js/jquery-3.6.0.min.js"></script>
      <script src="js/scripts.js"></script>
-     
+
    </body>
  </html>

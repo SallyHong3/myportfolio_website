@@ -15,19 +15,23 @@
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+    <!-- CND links -->
+    <script src="https://kit.fontawesome.com/0e927bc352.js" crossorigin="anonymous"></script>
   </head>
 
-  <body id="olive">
+  <body>
     <header id="header">
-      <div class="container">
-        <div class="navlink" id="my-navlink">
-        <a href="index.html" class="logo">YIJING | <strong>SALLY</strong></a>
+      <div class="container pullRightLeft">
+        <!-- mobile menu toggle-->
+        <div class="navtoggle" id="myNavtoggle">
+        <a id="logo" href="index.html">YIJING | <strong>SALLY</strong></a>
         <nav>
           <ul>
-            <li><a class="current" href="index.html" title="Yijing's work">Work</a></li>
-            <li><a href="about.html" title="About Yijing">About</a></li>
-            <li><a href="contact.html" title="Contact Yijing">Contact</a></li>
-            <li><a href="files/website_resume_2021.pdf" title="Yijing Hong Resume">Resume</a></li>
+            <li class="pullRightLeft"><a href="index.html" class="current-page" title="Yijing's work">Work</a></li>
+            <li class="pullRightLeft"><a href="about.html" title="About Yijing">About</a></li>
+            <li class="pullRightLeft"><a href="contact.html" title="Contact Yijing">Contact</a></li>
+            <li class="pullRightLeft"><a href="files/website_resume_2021.pdf" title="Yijing Hong Resume">Resume</a></li>
+            <li class="pullRightLeft"><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
           </ul>
         </nav>
       </div>
@@ -46,6 +50,7 @@
           </picture>
          </a>
         </div><!--close hero section-->
+      </div>
 
        <div class="container"><!--open project overview section-->
          <h2 class="centered">Project Overview</h2>
@@ -79,15 +84,17 @@
              </picture>
            </a>
          <p>The <b>Design thinking</b> process sets the foundation for the Olive app design. This iterative, user-centered approach enables me to redefine problems from users perspectives and find alternative solutions to address users needs.</p>
-       </div><!--close design process section-->
-
-       <div class="container"><!-- Empathize section-->
+       </div><!--close design process -->
+       <!-- Empathize -->
+       <div class="container">
          <h2 class="centered">EMPATHIZE</h2>
-         <div class="row"><!-- problem statement -->
+         <!-- problem statement -->
+         <div class="row">
            <h3>Problem Statement</h3>
            <p>A well-defined problem statement is critical to understand the user goals and set business objectives of a UX Design project.</p>
            <p><i>“The Olive app users need a way to get personalized recommendations on wellness management while undertaking challenges of living in a foreign country during the pandemic because they want to learn how to keep a healthy lifestyle and prevent mental exhaustion.”</i></p>
          </div>
+       </div>
          <!--competitor analysis -->
          <div class="row">
            <h3>Competitor Analysis</h3>
@@ -104,8 +111,9 @@
                <p>2. Many apps ask new users to complete a lengthy wellness assessment when they sign-up.</p>
                <p>3. Popular apps require subscription fees for full access and paid features are not cost-friendly.</p>
                <p>4. None of the existing apps in the U.S. market provide video and audio content in languages other than English.</p>
-             </div><!-- close competitor analysis sub-section-->
-         <div class="row"><!--open user research sub-section-->
+          </div><!-- close competitor analysis -->
+        <!--user research-->
+         <div class="row">
           <h3>User Research</h3>
           <p>To understand user behaviors and uncover user pain points with existing health and wellness apps, I conducted <b>27 user surveys</b> to collect <b>quantitative data</b> and <b>3 remote user interviews</b> for <b>qualitative data</b>. Also, <b>affinity map</b> was applied to compile and analyze data, grouping related information into clusters.</p>
            <div class="column col-md-12 col-lg-6"><!--open left column-->
@@ -132,8 +140,7 @@
             <p>3. Many gym-goers missed their gym buddies and want to find alternative group workout experiences online.
             <p>4. Users are motivated when they can see achievements and progress.
             <p>5. Non-native English-speaking users would love to access audio/video resources in their native languages.</p>
-         </div><!--close user research sub-section-->
-        </div><!-- close empathize section-->
+         </div><!-- close user research -->
 
          <div class="container"><!-- open define section-->
            <h2 class="centered">DEFINE</h2>
@@ -335,6 +342,7 @@
                 <h3 id="quote2">" The wellness check-in is quite fun and interactive. I enjoyed the meditation activity. "</h3>
               </div>
             </div><!-- close polishing the design sub-section -->
+
             <div class="row"><!-- open design style guide sub-section -->
               <h3>Design Style Guide</h3>
               <p>Before wrapping up the project, I create a Design Style Guide, including color palette, Typography, UI Patterns, and Tone of voice to standardize my design so that it can be easily shared with stakeholders (designers, developers, Product Manager).</p>
@@ -346,6 +354,7 @@
                 </picture>
               </a>
             </div><!-- close  design style guide sub-section -->
+
             <div class="row"><!--open final mockup sub-section-->
               <h3>Final Mockup</h3>
               <p>Design, test, iterate, and repeat. After several rounds of iterations, the Olive App is in its final state. However, since the app will continue evolving based on user experience and feedback, more iterations will follow.</p>
@@ -353,7 +362,7 @@
               <div class="subrow">
                 <p><b>Click to see</b><a href="https://xd.adobe.com/view/9dea1143-3fab-48c7-8b59-016880418048-c8b9/screen/6920edd0-f1c4-4a22-8324-99f26f5682d2" class="external-link"> high-fidelity prototype</a>
                 <p><b>Click to see</b><a href="https://screencast-o-matic.com/watch/crhhfPVe8EO" class="external-link"> video presentation</a>
-              </div>
+              </div><!-- close subrow -->
             </div><!--close final mockup sub-section-->
            </div><!-- close the iterate section -->
           </div><!-- close olive project -->
@@ -436,7 +445,8 @@
          </footer>
 
          <!-- JS -->
+         <script src="js/jquery-3.6.0.min.js"></script>
          <script src="js/scripts.js"></script>
-         
+
       </body>
     </html>

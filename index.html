@@ -15,19 +15,23 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
     <!-- responsive scaling -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CND links -->
+    <script src="https://kit.fontawesome.com/0e927bc352.js" crossorigin="anonymous"></script>
   </head>
 
   <body id="home">
-    <header id="header">
-      <div class="container">
-        <div class="navlink" id="my-navlink">
-        <a class="logo" href="index.html">YIJING | <strong>SALLY</strong></a>
+    <header>
+      <div class="container pullRightLeft">
+        <!-- mobile menu toggle-->
+        <div class="navtoggle" id="myNavtoggle">
+        <a class="logo" href="index.html" title="Yijing Sally Hong logo">YIJING | <strong>SALLY</strong></a>
         <nav>
           <ul>
-            <li><a class="current-page" href="index.html" title="Yijing's work">Work</a></li> <!-- Do not leave space in the class name!-->
-            <li><a href="about.html" title="About Yijing">About</a></li>
-            <li><a href="contact.html" title="Contact Yijing">Contact</a></li>
-            <li><a href="files/website_resume_2021.pdf" title="Yijing Hong Resume">Resume</a></li>
+            <li class="pullRightLeft"><a href="index.html" class="current-page" title="Yijing's work">Work</a></li>
+            <li class="pullRightLeft"><a href="about.html" title="About Yijing Sally Hong">About</a></li>
+            <li class="pullRightLeft"><a href="contact.html" title="Contact Yijing Sally Hong">Contact</a></li>
+            <li class="pullRightLeft"><a href="files/website_resume_2021.pdf" title="Yijing Sally Hong Resume">Resume</a></li>
+            <li class="pullRightLeft"><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
           </ul>
         </nav>
       </div>
@@ -37,23 +41,23 @@
     <main>
       <!-- hero-->
         <div id="welcome">
-          <div class="container" id= "hero"> <!-- open orange section -->
-            <h2>Hi, I'm Yijing. I also go by <strong class="sally">Sally!</strong></h2>
+          <div class="container" id= "hero">
+            <h2>Hi, I'm Yijing. I also go by Sally!</h2>
             <span>I’m a UX designer with an eye for beauty in business and a mindset for social good.</span>
             <h4>Built in California with a boundless spirit for adventure.
-            <br>Developed in New York City with a passion for serving people.
+            <br>Developed in NYC with a passion for serving people.
             <br>Currently obsessed with user experience design.
             <br>Always an advocate for accessibility and inclusion.
             </h4>
           </div> <!--close container -->
-        </div> <!--close banner -->
+        </div> <!--close welcome section -->
       <!-- projects-->
+      <div id="work">
        <div class="container"><!-- open yellow container -->
+        <h2 class="centered">My Work</h2>
          <!-- project 1 -->
-         <div class="row"><!-- open row that holds 2 columns for project 1-->
-           <div class="subrow">
-             <h2 class="centered">My Work</h2>
-           </div>
+         <div><!-- open box for project 1-->
+          <div class="row"><!-- open row that holds 2 columns for project 1-->
             <div class="column col-md-6 col-lg-7"><!-- open first column (for image)-->
               <a href="index.html">
               <picture class="hero-image">
@@ -71,6 +75,7 @@
               <a class="button" href="olive.html">View Project</a><!-- button or link label -->
           </div><!-- end second column (for text)-->
         </div><!-- end row that holds (2) columns for project 1-->
+      </div><!-- close the box -->
         <!-- project 2 -->
         <div class="row"><!-- open row that holds (2) columns for project 2-->
           <div class="column col-md-6 col-lg-7 "><!-- open first column (for image)-->
@@ -129,6 +134,7 @@
           </div><!-- end second column (for text)-->
         </div><!-- end row that holds (2) columns for project 4-->
        </div><!-- end yellow container -->
+     </div>
     </main>
 
     <footer id="contact" class="banner"><!-- for perosnal contact and social media info -->
@@ -208,6 +214,7 @@
     </footer>
 
     <!-- JS -->
+    <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/scripts.js"></script>
 
    </body>

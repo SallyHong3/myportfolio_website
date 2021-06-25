@@ -53,19 +53,23 @@
     padding: 20px;
   }
   </style>
+  <!-- CND links -->
+  <script src="https://kit.fontawesome.com/0e927bc352.js" crossorigin="anonymous"></script>
 </head>
 
 <body id="contactpage">
   <header>
-    <div class="container">
-      <div class="navlink" id="my-navlink">
+    <div class="container pullRightLeft">
+      <!-- mobile menu toggle-->
+      <div class="navtoggle" id="myNavtoggle">
       <a class="logo" href="index.html">YIJING | <strong>SALLY</strong></a>
       <nav>
         <ul>
-          <li><a href="index.html" title="Yijing's work">Work</a></li>
-          <li><a href="about.html" title="About Yijing">About</a></li>
-          <li><a class="current-page" href="contact.html" title="Contact Yijing">Contact</a></li>
-          <li><a href="files/website_resume_2021.pdf" title="Yijing Hong Resume">Resume</a></li>
+          <li class="pullRightLeft"><a href="index.html" title="Yijing's work">Work</a></li>
+          <li class="pullRightLeft"><a href="about.html" title="About Yijing">About</a></li>
+          <li class="pullRightLeft"><a class="current-page" href="contact.html" title="Contact Yijing">Contact</a></li>
+          <li class="pullRightLeft"><a href="files/website_resume_2021.pdf" title="Yijing Hong Resume">Resume</a></li>
+          <li class="pullRightLeft"><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
         </ul>
       </nav>
     </div>
@@ -84,7 +88,7 @@
             <input type="text" id="fname" name="firstname" placeholder="Your first name..">
             <label for="lname">Last Name</label>
             <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-            <label for="country">E-mail</label>
+            <label for="email">E-mail</label>
             <input type="text" id="email" name="email" placeholder="Your email address ..">
             <label for="subject">Subject</label>
             <textarea id="subject" name="subject" placeholder="Type your message here.." style="height:200px"></textarea>
@@ -171,6 +175,7 @@
    </footer>
 
    <!-- JS -->
+   <script src="js/jquery-3.6.0.min.js"></script>
    <script src="js/scripts.js"></script>
 
   </body>
