@@ -7,7 +7,7 @@
   <meta name="description" content="A personal portfolio to showcase my works in UX and UI Design">
   <title>About Yijing Sally Hong</title>
   <!--favicon -->
-  <link href="img/favicon.ico" rel="short icon">
+  <link href="img/favicon/favicon.ico" rel="short icon">
   <!-- CSS -->
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -44,11 +44,13 @@
       <div class="row">
         <h2 class="centered">About</h2>
         <!-- open column for headshot -->
-          <div class="column col-md-6 col-lg-4">
-            <a href="about.html">
+          <div class="column col-md-12 col-lg-4">
+            <a href="about.html" class="hover-switch">
             <picture>
               <source srcset="img/headshot/headshot2@1x.jpg" media="(min-width:767px)">
-              <img id="about-image" src="img/headshot/headshot2@2x.jpg" height="800" width="800" alt="my headshot">
+              <img id="about-image" src="img/headshot/headshot2@1x.jpg" height="800" width="800" alt="my headshot">
+              </a>
+
            </picture>
          </a>
        </div><!-- close column for headshot -->
@@ -62,7 +64,7 @@
         </div><!-- close column for intro -->
       </div><!-- close row 1-->
       <!-- open row 2 -->
-      <div class="row">
+      <div class="row" id="skills-tools">
         <h2 class="centered">Skills & Tools</h2>
         <!-- open left column for skills -->
           <div class="column col-md-6 col-lg-6">
