@@ -153,12 +153,12 @@
 
   nav>ul>li>a:hover {
     color: rgba(201,94,51);
-    text-decoration: underline;
+    text-decoration: none;
   }
 
   nav>ul>li>a:focus {
     color: rgba(201,94,51);
-    text-decoration: underline;
+    text-decoration: none;
   }
 
   footer {
@@ -239,8 +239,6 @@
     display: inline-block;
     padding-top: 10px;
     padding-bottom: 10px;
-    max-width: 150px;
-    min-width: 641px;
     font-size: 22px;
   }
 
@@ -456,7 +454,6 @@
       nav {
         width: auto;
         float: right;
-        margin-top: 25px;
       }
 
       nav > ul > li {
