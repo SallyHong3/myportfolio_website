@@ -192,15 +192,11 @@
   }
 
   .subrow {
-    margin: 20px 0 20px 0;
+    margin: 10px 0 10px 0;
   }
 
   p {
-    display: block;
-    margin-block-start:1em;
-    margin-block-end:1em;
-    margin-block-start:1em;
-    margin-block-end:1em;
+    display:block;
   }
 
   a {
@@ -244,26 +240,33 @@
 
   .centered {
     text-align: center;
-  }
-
-  .hero-image {
-    display: block;
-    margin: 20px 20px 20px 20px;
-    box-shadow: 1px 1px 8px 1px rgb(50 50 61 / 20%);
+    margin: 0 auto;
   }
 
   #contact {
     text-align: center;
-    font-size: 20px;
+    font-size: 1em;
     padding: 12px 0 12px 0;
     display:inline-block;
     width: 100%;
+  }
+
+/* ----------- Contact ---------- */
+  .text-shift {
+    text-align:center;
+  }
+
+  #contactform {
+    margin: 60px 60px 60px 60px;
+    display: relative;
   }
 
   #copyright {
     font-size: 14px;
     text-align: center;
   }
+
+  /* ----------- Social Media ---------- */
 
   .social {
     text-align: center;
@@ -280,11 +283,166 @@
     height: auto;
   }
 
-  /* =============== Colunmn Reference =============== */
+  /* ========= PAGE SPECIFIC Styles ============= */
+  /* ---------- index/home page ----------------*/
+  .hero-image {
+    display: block;
+    margin: 20px auto;
+    box-shadow: 1px 1px 8px 1px rgb(50 50 61 / 20%);
+  }
+
+  #welcome {
+    padding: 12px 0 12px 0;
+    text-align: center;
+    display:inline-block;
+    width: 100%;
+  }
+
+  #work {
+     background-color: #ffffff;
+   }
+
+  #hero {
+     background-color: #ffffff;
+     text-align: center;
+   }
+
+  #hero h1 {
+     margin: 0;
+     padding: 0.67em 0;
+     text-align: center;
+   }
+
+   #hero h4 {
+     font-size: 18px;
+   }
+
+   #hero span {
+     display: block;
+   }
+
+/* ----------- Project 1 Olive ----------------*/
+    #quote1 {
+      text-align:left;
+      color: #7d832f;
+    }
+
+    #quote2 {
+      text-align:right;
+      color: #7d832f;
+    }
+
+    #pov {
+      color: #7d832f;
+      font-size: 1.1em;
+      font-weight:400;
+      font-family: "Poppins", sans-serif;
+      margin-top:0;
+      margin-bottom:0;
+    }
+
+    img.persona, .userjourney, .userflow, .sitemap, .usertesting {
+      margin-top:20px;
+      margin-bottom:20px;
+    }
+
+    img.persona, .userjourney, .usertesting {
+      box-shadow: 1px 1px 5px 1px rgb(50 50 61 / 30%)
+    }
+
+    p #testresult {
+      margin-top:20px;
+      margin-bottom: 20px;
+    }
+
+    #final-mockup {
+      border: 5px solid rgba(189,100,62);
+      border-radius:20px;
+      text-align: inline-block;
+      padding: 30px;
+    }
+
+ /* -------------- About Page ----------------*/
+   #aboutme h3 {
+     margin-top: 0;
+   }
+
+   #about-image {
+       display: block;
+       margin-top: 10px;
+       margin-bottom: 30px;
+       margin-left: auto;
+       margin-right: auto;
+       max-width: 300px;
+       border-radius: 50%;
+       border: 3px solid rgba(189,100,62);
+     }
+
+   .row #skills-tools {
+     margin-top: 50px;
+   }
+
+ /* -- Position both images in same place -- */
+ .hover-switch > img {
+   position: absolute;
+   top: calc(50% - 100px);
+   left: calc(50% - 100px);
+ }
+ /* -- Show the last image by default --*/
+ .hover-switch > img:last-of-type {
+   opacity: 1;
+   transition: opacity 0.5s ease-in-out;
+   -moz-transition: opacity 0.5s ease-in-out;
+   -webkit-transition: opacity 0.5s ease-in-out;
+ }
+ /* -- Hide the last image on hover --*/
+ .hover-switch:hover > img:last-of-type {
+   opacity: 0;
+ }
+
+/* --------------- Buttons ---------------------*/
+/* Always place buttons at the END of stylesheet to avoid overwritten */
+  .button {
+    display: inline-block;
+    background-color: #c95e33;
+    color: #ffffff;
+    border: 2px solid #c95e33;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 10px 20px 10px 20px;
+    border-radius: 5px;
+    margin-top: 15px;
+  }
+
+  .button:hover {
+    display: inline-block;
+    background-color: transparent;
+    color: #c95e33;
+    border: 2px solid #c95e33;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 10px 20px 10px 20px;
+    border-radius: 5px;
+  }
+
+  .button.contact {
+    background-color: transparent;
+    color: #bd643e;
+    border: 2px solid #bd643e;
+    padding: 10px 20px 10px 20px;
+    transition: 0.2s opacity;
+  }
+
+  .button.contact:hover {
+    background-color: #bd643e;
+    color: #ffffff;
+    padding: 10px 20px 10px 20px;
+  }
+
+  /* =============== Column Reference =============== */
   [class*="col-"] {
     padding-left: 10px;
     padding-right: 10px;
-    float: left;
   }
 
   .reverseimg [class*="col-"] {
@@ -292,6 +450,7 @@
     padding-right: 10px;
     float: left;
   }
+
   .col-1 {
     width: 8.33%;
   }
@@ -340,111 +499,8 @@
     width: 100%;
   }
 
-
-
-  /* ========= PAGE SPECIFIC Styles ============= */
-  #welcome {
-    padding: 12px 0 12px 0;
-    text-align: center;
-    display:inline-block;
-    width: 100%;
-  }
-
-  #work {
-     background-color: #ffffff;
-   }
-
-  #quote1 {
-    text-align:left;
-    color: #7d832f;
-  }
-
-  #quote2 {
-    text-align:right;
-    color: #7d832f;
-  }
-
-  #hero {
-     background-color: #ffffff;
-     text-align: center;
-   }
-
-  #hero h1 {
-     margin: 0;
-     padding: 0.67em 0;
-     text-align: center;
-   }
-
-   #hero h4 {
-     font-size: 18px;
-   }
-
-   #hero span {
-     display: block;
-   }
-
-   #aboutme h3 {
-     margin-top: 0;
-   }
-
-   #about-image {
-     display: block;
-     margin: auto;
-     max-width: 300px;
-     border-radius: 10px;
-     border: 3px solid rgba(189,100,62);
-   }
-
-
-  /* Note: Always put this rule at the END of stylesheet to avoid overwritten */
-  .button {
-    display: inline-block;
-    background-color: #c95e33;
-    color: #ffffff;
-    border: 2px solid #c95e33;
-    font-weight: 500;
-    text-decoration: none;
-    padding: 10px 20px 10px 20px;
-    border-radius: 5px;
-    margin-top: 15px;
-  }
-
-  .button:hover {
-    display: inline-block;
-    background-color: transparent;
-    color: #c95e33;
-    border: 2px solid #c95e33;
-    font-weight: 500;
-    text-decoration: none;
-    padding: 10px 20px 10px 20px;
-    border-radius: 5px;
-  }
-
-  .button.contact {
-    background-color: transparent;
-    color: #bd643e;
-    border: 2px solid #bd643e;
-    padding: 10px 20px 10px 20px;
-    transition: 0.2s opacity;
-  }
-
-  .button.contact:hover {
-    background-color: #bd643e;
-    color: #ffffff;
-    padding: 10px 20px 10px 20px;
-  }
-
-  .text-shift {
-    text-align:center;
-  }
-
-  #contactform {
-    margin: 60px 60px 60px 60px;
-    display: relative;
-  }
-
-  /* ============ MEDIA QUERIES=============== */
-  /* -- Medium devices (640px and larger) -- */
+  /* ============== MEDIA QUERIES =============== */
+  /* --- Medium devices (640px and larger) --- */
     @media only screen and (min-width: 640px) {
       header {
         text-align:unset;
@@ -498,15 +554,15 @@
       }
 
       #about-image {
-        float: left;
-        margin: 0 15px 15px 0;
-        max-width: 400px;
-        border-radius: 10px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 50%;
         border: 3px solid rgba(189,100,62);
       }
 
     }
-  /* -- Large devices (1024px or larger) -- */
+  /* ===== Large devices (1024px or larger) ===== */
      @media only screen and (min-width: 1024px) {
 
       .container {
@@ -544,8 +600,18 @@
         padding-left: 20px;
         padding-right: 20px;
       }
+
+      #about-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 300px;
+        border-radius: 50%;
+        border: 3px solid rgba(189,100,62);
+      }
     }
 
+  /* ===== X-Large devices (1024px or larger) ===== */
     @media only screen and (min-width: 1440px) {
      .container {
        max-width: 1400px;
