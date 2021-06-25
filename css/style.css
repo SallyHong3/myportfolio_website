@@ -49,7 +49,7 @@
 
    h4 {
      font-family: 'Roboto', sans-serif;
-     font-size: 1.15em;
+     font-size: 1.1em;
      font-weight:300;
      color: black;
    }
@@ -165,12 +165,12 @@
     background-color: #f4eee6;
     color: #444347;
     text-align: center;
-    margin: 40px 0 0 0;
+    margin: 0;
     padding:20px;
     font-family: 'Poppins', sans-serif;
     font-size:16px;
     font-weight:500;
-    line-height:1.6;
+    line-height:1.4;
   }
 
   .container {
@@ -192,11 +192,11 @@
   }
 
   .subrow {
-    margin: 10px 0 10px 0;
+    margin: 10px;
   }
 
   p {
-    display:block;
+    display: block;
   }
 
   a {
@@ -240,7 +240,7 @@
 
   .centered {
     text-align: center;
-    margin: 0 auto;
+    margin: 10px auto;
   }
 
   #contact {
@@ -279,7 +279,7 @@
   }
 
   .social svg {
-    width: 50px;
+    width: 40px;
     height: auto;
   }
 
@@ -355,7 +355,7 @@
       margin-bottom: 20px;
     }
 
-    #final-mockup {
+    .projectinfo {
       border: 5px solid rgba(189,100,62);
       border-radius:20px;
       text-align: inline-block;
@@ -375,8 +375,8 @@
        border: 3px solid rgba(189,100,62);
      }
 
-   .row #skills-tools {
-     margin-top: 50px;
+   #skills-tools {
+     margin-top: 70px;
    }
 
  /* -- Position both images in same place -- */
@@ -539,7 +539,7 @@
       }
 
       [class*="col-"] {
-        float: left;
+          float: left;
         padding-left: 20px;
         padding-right: 20px;
       }
@@ -569,6 +569,14 @@
         padding: 0 15px 0 15px;
       }
 
+      .col-lg-2 {
+        width: 20%;
+      }
+
+      .col-lg-3 {
+        width: 25%;
+      }
+
       .col-lg-4 {
         width: 33%;
       }
@@ -588,24 +596,35 @@
         width: 67%;
       }
 
+      .col-lg-9 {
+        width: 75%;
+      }
+
       .col-lg-12 {
         width: 100%;
       }
 
       [class*="col-"] {
-        float: left;
         padding-left: 20px;
         padding-right: 20px;
       }
 
       #about-image {
         display: block;
-        margin-left: auto;
-        margin-right: auto;
+        margin: 30px auto;
         max-width: 300px;
         border-radius: 50%;
         border: 3px solid rgba(189,100,62);
       }
+
+      .hide-2 {
+        margin-left: 16.67%;
+      }
+
+      .hide-1{
+        margin-left: 10%;
+      }
+
     }
 
   /* ===== X-Large devices (1024px or larger) ===== */
