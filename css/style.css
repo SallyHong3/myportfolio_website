@@ -30,7 +30,6 @@ h4 {
   line-height: 1.6;
   display: inline-block;
   width: 100%;
-  background-color: #fff;
 }
 
 h1 {
@@ -359,6 +358,7 @@ img.user-research,
 .userjourney,
 .usertesting {
   box-shadow: 1px 1px 5px 1px rgb(50 50 61 / 30%);
+  margin: 5px;
 }
 
 p #testresult {
@@ -432,10 +432,10 @@ p #testresult {
   text-decoration: none;
   padding: 10px 20px;
   border-radius: 5px;
+  background-color: #fff;
 }
 
 .button.contact {
-  color: #bd643e;
   border: 2px solid #bd643e;
   padding: 10px 20px;
   transition: 0.2s opacity;
@@ -573,11 +573,20 @@ p #testresult {
 
 /* ===== Large devices (1024px or larger) ===== */
 @media only screen and (min-width: 1024px) {
+  .hero-image {
+    width: 80%;
+  }
+
+  .sitemap {
+    width: 80%;
+  }
+
   .container {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
     padding: 0 15px;
+    width: 85%;
   }
 
   .col-lg-2 {
