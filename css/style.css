@@ -219,7 +219,7 @@ a:focus {
 a:hover.logo {
   color: #c95e33;
   text-decoration: none;
-  background-color: #fff;
+  background-color: transparent;
 }
 
 .current-page {
@@ -390,6 +390,8 @@ p #testresult {
   margin-top: 70px;
 }
 
+/* ========== HOVER IMAGE CSS ============= * /
+
 /* -- Position both images in same place -- */
 .hover-switch > img {
   position: absolute;
@@ -438,7 +440,7 @@ p #testresult {
 .button.contact {
   border: 2px solid #bd643e;
   padding: 10px 20px;
-  transition: 0.2s opacity;
+  transition: 0.2s;
 }
 
 .button.contact:hover {
