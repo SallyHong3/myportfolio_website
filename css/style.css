@@ -209,14 +209,12 @@ p {
 a {
   color: #444347;
   text-decoration: none;
-  background-color: transparent;
 }
 
 a:hover,
 a:focus {
   color: #c95e33;
   text-decoration: underline;
-  background-color: transparent;
 }
 
 a:hover.logo {
@@ -227,21 +225,18 @@ a:hover.logo {
 
 .current-page {
   color: #c95e33;
-  background-color: transparent;
 }
 
 .external-link {
   color: #c95e33;
   font-weight: 500;
   text-decoration: none;
-  background-color: transparent;
 }
 
 a:hover.external-link {
   color: #c95e33;
   font-weight: 500;
   text-decoration: underline;
-  background-color: transparent;
 }
 
 /* ======== Component Level ======== */
@@ -313,7 +308,6 @@ a:hover.external-link {
 }
 
 #hero {
-  background-color: #fff;
   text-align: center;
 }
 
@@ -335,7 +329,6 @@ a:hover.external-link {
 #quote1 {
   text-align: left;
   color: #7d832f;
-  background-color: transparent;
 }
 
 #quote2 {
@@ -433,7 +426,6 @@ p #testresult {
 
 .button:hover {
   display: inline-block;
-  background-color: transparent;
   color: #c95e33;
   border: 2px solid #c95e33;
   font-weight: 500;
@@ -443,7 +435,6 @@ p #testresult {
 }
 
 .button.contact {
-  background-color: transparent;
   color: #bd643e;
   border: 2px solid #bd643e;
   padding: 10px 20px;
