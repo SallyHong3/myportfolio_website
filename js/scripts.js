@@ -1,10 +1,10 @@
 console.log('Welcome to my portfolio site!')
 
-// Toggle hamburger menu
 function menuToggle () {
-  var myNavToggle = document.getElementById('myNavtoggle')
-  if (myNavToggle.className === 'navtoggle') {
-    myNavToggle.className += ' responsive'
+  var x = document.getElementById('myNavtoggle')
+  if (x.className === 'navtoggle') {
+    x.className += ' responsive'
   } else {
-    myNavToggle.className = 'navtoggle'
+    x.className = 'navtoggle'
   }
+}
