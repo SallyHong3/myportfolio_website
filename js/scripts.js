@@ -1,10 +1,10 @@
-console.log ("你好！Welcome to my portfolio site.");
+console.log('Welcome to my portfolio site!')
 
-function menuToggle() {
-  var x = document.getElementById('myNavtoggle');
-  if (x.className === 'navtoggle') {
-    x.className += ' responsive';
+// Toggle hamburger menu
+function menuToggle () {
+  var myNavToggle = document.getElementById('myNavtoggle')
+  if (myNavToggle.className === 'navtoggle') {
+    myNavToggle.className += ' responsive'
   } else {
-    x.className = 'navtoggle';
+    myNavToggle.className = 'navtoggle'
   }
-}
